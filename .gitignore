@@ -1,6 +1,8 @@
 # --- Python ---
 venv/
 .venv/
+venv_github/
+.venv_github/
 __pycache__/
 *.pyc
 
