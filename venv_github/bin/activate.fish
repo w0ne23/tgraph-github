@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /Users/dawon/Downloads/tgraph-github/venv_github
+set -gx VIRTUAL_ENV /Users/dawon/Desktop/tgraph-github/venv_github
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

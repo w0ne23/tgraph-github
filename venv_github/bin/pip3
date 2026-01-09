@@ -1,4 +1,4 @@
-#!/Users/dawon/Downloads/tgraph-github/venv_github/bin/python3.12
+#!/Users/dawon/Desktop/tgraph-github/venv_github/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

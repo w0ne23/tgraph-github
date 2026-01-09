@@ -41,33 +41,118 @@ async def get_tgraph(owner: str, repo: str, limit: int = 10):
 # 토큰 없이 테스트용 더미 데이터
 @app.get("/api/demo")
 def demo_data():
-    """다원과 규민의 협업 시나리오 데모 데이터"""
+    """4명의 기여자가 협업하는 웹 애플리케이션 개발 시나리오"""
+    
+    # 시간대 설정 (2024년 1월 ~ 3월)
+    t1 = 1704100000  # 2024-01-01 (프로젝트 시작)
+    t2 = 1704700000  # 2024-01-08 (1주 후)
+    t3 = 1705300000  # 2024-01-15 (2주 후)
+    t4 = 1705900000  # 2024-01-22 (3주 후)
+    t5 = 1706500000  # 2024-01-29 (4주 후)
+    t6 = 1707100000  # 2024-02-05 (5주 후)
+    
     return {
         "nodes": [
-            # t1: 다원의 초기 세팅 (과거: 1704100000)
-            {"id": "user-dawon", "type": "contributor", "label": "다원", "title": "Initial Creator", "z": 1704100000, "author": "dawon"},
-            {"id": "file-main.py", "type": "file", "label": "main.py", "title": "Base logic file", "z": 1704105000, "author": "dawon"},
+            # === Week 1: 다원의 프로젝트 초기 세팅 ===
+            {"id": "user-dawon", "type": "contributor", "label": "다원", "title": "Project Lead", "z": t1, "author": "dawon"},
+            {"id": "file-README.md", "type": "file", "label": "README.md", "title": "Project documentation", "z": t1 + 1000, "author": "dawon"},
+            {"id": "file-index.html", "type": "file", "label": "index.html", "title": "Main HTML", "z": t1 + 2000, "author": "dawon"},
+            {"id": "commit-init", "type": "commit", "label": "initial", "title": "feat: 프로젝트 초기 세팅", "z": t1 + 3000, "author": "dawon"},
             
-            # t2: 규민의 이슈 제기 및 작업 (중간: 1704200000)
-            {"id": "user-jimin", "type": "contributor", "label": "규민", "title": "Developer", "z": 1704200000, "author": "gyumin"},
-            {"id": "issue-1", "type": "issue", "label": "#1", "title": "main 로직 구현", "z": 1704210000, "author": "gyumin"},
+            # === Week 2: 규민의 백엔드 API 개발 ===
+            {"id": "user-gyumin", "type": "contributor", "label": "규민", "title": "Backend Developer", "z": t2, "author": "gyumin"},
+            {"id": "issue-1", "type": "issue", "label": "#1", "title": "백엔드 API 서버 구축 필요", "z": t2 + 1000, "author": "gyumin"},
+            {"id": "file-api.py", "type": "file", "label": "api.py", "title": "Backend API", "z": t2 + 2000, "author": "gyumin"},
+            {"id": "file-database.py", "type": "file", "label": "database.py", "title": "Database module", "z": t2 + 3000, "author": "gyumin"},
+            {"id": "pr-1", "type": "pull_request", "label": "PR#1", "title": "feat: FastAPI 서버 구현", "z": t2 + 4000, "author": "gyumin"},
+            {"id": "commit-api1", "type": "commit", "label": "feat-api", "title": "feat: 사용자 인증 API 추가", "z": t2 + 5000, "author": "gyumin"},
+            {"id": "commit-db1", "type": "commit", "label": "feat-db", "title": "feat: 데이터베이스 연결 설정", "z": t2 + 6000, "author": "gyumin"},
             
-            # t3: PR 및 커밋 (최근: 1704300000)
-            {"id": "pr-1", "type": "pull_request", "label": "PR#1", "title": "Implement main logic", "z": 1704300000, "author": "gyumin"},
-            {"id": "commit-c1", "type": "commit", "label": "feat: logic", "title": "Add core loop", "z": 1704305000, "author": "gyumin"},
+            # === Week 3: 동석의 프론트엔드 개발 ===
+            {"id": "user-dongseok", "type": "contributor", "label": "동석", "title": "Frontend Developer", "z": t3, "author": "dongseok"},
+            {"id": "issue-2", "type": "issue", "label": "#2", "title": "사용자 인터페이스 개선", "z": t3 + 1000, "author": "dongseok"},
+            {"id": "file-app.js", "type": "file", "label": "app.js", "title": "Main JS logic", "z": t3 + 2000, "author": "dongseok"},
+            {"id": "file-styles.css", "type": "file", "label": "styles.css", "title": "Stylesheets", "z": t3 + 3000, "author": "dongseok"},
+            {"id": "pr-2", "type": "pull_request", "label": "PR#2", "title": "feat: 반응형 UI 구현", "z": t3 + 4000, "author": "dongseok"},
+            {"id": "commit-ui1", "type": "commit", "label": "feat-ui", "title": "feat: 로그인 화면 디자인", "z": t3 + 5000, "author": "dongseok"},
+            {"id": "commit-ui2", "type": "commit", "label": "style", "title": "style: CSS 그리드 레이아웃 적용", "z": t3 + 6000, "author": "dongseok"},
+            
+            # === Week 4: 지민의 테스트 및 버그 수정 ===
+            {"id": "user-jimin", "type": "contributor", "label": "지민", "title": "QA Engineer", "z": t4, "author": "jimin"},
+            {"id": "issue-3", "type": "issue", "label": "#3", "title": "로그인 실패 시 에러 처리", "z": t4 + 1000, "author": "jimin"},
+            {"id": "issue-4", "type": "issue", "label": "#4", "title": "모바일 레이아웃 깨짐", "z": t4 + 2000, "author": "jimin"},
+            {"id": "pr-3", "type": "pull_request", "label": "PR#3", "title": "fix: 로그인 에러 핸들링", "z": t4 + 3000, "author": "gyumin"},
+            {"id": "commit-fix1", "type": "commit", "label": "fix-auth", "title": "fix: 인증 실패 시 적절한 에러 반환", "z": t4 + 4000, "author": "gyumin"},
+            
+            # === Week 5: 동석과 다원의 협업 - 문서화 ===
+            {"id": "issue-5", "type": "issue", "label": "#5", "title": "API 문서화 필요", "z": t5, "author": "dawon"},
+            {"id": "file-API_DOCS.md", "type": "file", "label": "API_DOCS.md", "title": "API documentation", "z": t5 + 1000, "author": "dongseok"},
+            {"id": "pr-4", "type": "pull_request", "label": "PR#4", "title": "docs: API 사용 가이드 작성", "z": t5 + 2000, "author": "dongseok"},
+            {"id": "commit-docs1", "type": "commit", "label": "docs", "title": "docs: README 업데이트 및 예제 추가", "z": t5 + 3000, "author": "dongseok"},
+            
+            # === Week 6: 지민의 모바일 버그 수정 ===
+            {"id": "pr-5", "type": "pull_request", "label": "PR#5", "title": "fix: 모바일 반응형 레이아웃", "z": t6, "author": "dongseok"},
+            {"id": "commit-mobile", "type": "commit", "label": "fix-css", "title": "fix: 모바일 화면 CSS 수정", "z": t6 + 1000, "author": "dongseok"},
+            
+            # === 추가 파일들 ===
+            {"id": "file-config.json", "type": "file", "label": "config.json", "title": "Configuration", "z": t2 + 500, "author": "gyumin"},
+            {"id": "file-utils.js", "type": "file", "label": "utils.js", "title": "Utility functions", "z": t3 + 500, "author": "dongseok"},
         ],
         "edges": [
-            # t1 관계: 다원이 파일을 만듦
-            {"source": "user-dawon", "target": "file-main.py", "type": "created"},
+            # === Week 1: 다원의 초기 작업 ===
+            {"source": "user-dawon", "target": "file-README.md", "type": "created"},
+            {"source": "user-dawon", "target": "file-index.html", "type": "created"},
+            {"source": "user-dawon", "target": "commit-init", "type": "authored"},
+            {"source": "commit-init", "target": "file-README.md", "type": "modifies"},
+            {"source": "commit-init", "target": "file-index.html", "type": "modifies"},
             
-            # t2 관계: 규민이 이슈를 올림
-            {"source": "user-jimin", "target": "issue-1", "type": "authored"},
+            # === Week 2: 규민의 백엔드 개발 ===
+            {"source": "user-gyumin", "target": "issue-1", "type": "created"},
+            {"source": "issue-1", "target": "pr-1", "type": "references"},
+            {"source": "user-gyumin", "target": "pr-1", "type": "authored"},
+            {"source": "pr-1", "target": "commit-api1", "type": "contains"},
+            {"source": "pr-1", "target": "commit-db1", "type": "contains"},
+            {"source": "commit-api1", "target": "file-api.py", "type": "modifies"},
+            {"source": "commit-api1", "target": "file-config.json", "type": "modifies"},
+            {"source": "commit-db1", "target": "file-database.py", "type": "modifies"},
+            {"source": "user-gyumin", "target": "file-api.py", "type": "created"},
+            {"source": "user-gyumin", "target": "file-database.py", "type": "created"},
             
-            # t3 관계: 규민이 작업한 흐름
-            {"source": "issue-1", "target": "pr-1", "type": "references"},   # 이슈 해결을 위해 PR 생성
-            {"source": "pr-1", "target": "commit-c1", "type": "contains"},   # PR에 포함된 실제 코드 작업
-            {"source": "pr-1", "target": "file-main.py", "type": "modifies"}, # PR이 기존 main.py를 수정함
-            {"source": "commit-c1", "target": "user-jimin", "type": "authored_by"} # 커밋의 주인은 규민
+            # === Week 3: 동석의 프론트엔드 개발 ===
+            {"source": "user-dongseok", "target": "issue-2", "type": "created"},
+            {"source": "issue-2", "target": "pr-2", "type": "references"},
+            {"source": "user-dongseok", "target": "pr-2", "type": "authored"},
+            {"source": "pr-2", "target": "commit-ui1", "type": "contains"},
+            {"source": "pr-2", "target": "commit-ui2", "type": "contains"},
+            {"source": "commit-ui1", "target": "file-app.js", "type": "modifies"},
+            {"source": "commit-ui1", "target": "file-index.html", "type": "modifies"},
+            {"source": "commit-ui2", "target": "file-styles.css", "type": "modifies"},
+            {"source": "user-dongseok", "target": "file-app.js", "type": "created"},
+            {"source": "user-dongseok", "target": "file-styles.css", "type": "created"},
+            {"source": "user-dongseok", "target": "file-utils.js", "type": "created"},
+            
+            # === Week 4: 지민의 이슈 제기 & 규민의 수정 ===
+            {"source": "user-jimin", "target": "issue-3", "type": "created"},
+            {"source": "user-jimin", "target": "issue-4", "type": "created"},
+            {"source": "issue-3", "target": "pr-3", "type": "references"},
+            {"source": "user-gyumin", "target": "pr-3", "type": "authored"},
+            {"source": "pr-3", "target": "commit-fix1", "type": "contains"},
+            {"source": "commit-fix1", "target": "file-api.py", "type": "modifies"},
+            
+            # === Week 5: 문서화 협업 (다원이 이슈, 동석이 작업) ===
+            {"source": "user-dawon", "target": "issue-5", "type": "created"},
+            {"source": "issue-5", "target": "pr-4", "type": "references"},
+            {"source": "user-dongseok", "target": "pr-4", "type": "authored"},
+            {"source": "pr-4", "target": "commit-docs1", "type": "contains"},
+            {"source": "commit-docs1", "target": "file-README.md", "type": "modifies"},
+            {"source": "commit-docs1", "target": "file-API_DOCS.md", "type": "modifies"},
+            {"source": "user-dongseok", "target": "file-API_DOCS.md", "type": "created"},
+            
+            # === Week 6: 모바일 버그 수정 (동석이 지민의 이슈 해결) ===
+            {"source": "issue-4", "target": "pr-5", "type": "references"},
+            {"source": "user-dongseok", "target": "pr-5", "type": "authored"},
+            {"source": "pr-5", "target": "commit-mobile", "type": "contains"},
+            {"source": "commit-mobile", "target": "file-styles.css", "type": "modifies"},
         ]
     }
 
