@@ -6,12 +6,19 @@ from github_client import fetch_repo_data
 from transformer import transform_to_tgraph
 from config import GITHUB_TOKEN
 
+from typing import Dict, List
+import json
+
+from analyzers.domain_classifier import classify_multiple_files, extract_imports, classify_file
+from analyzers.insight_generator import generate_insights, merge_insights_with_graph
+
 app = FastAPI(title="T-Graph GitHub API")
 
 # React 개발 서버 허용
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite 기본 포트
+    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -50,20 +57,51 @@ def demo_data():
     t4 = 1705900000  # 2024-01-22 (3주 후)
     t5 = 1706500000  # 2024-01-29 (4주 후)
     t6 = 1707100000  # 2024-02-05 (5주 후)
-    
-    return {
-        "nodes": [
+
+    nodes = [
             # === Week 1: 다원의 프로젝트 초기 세팅 ===
             {"id": "user-dawon", "type": "contributor", "label": "다원", "title": "Project Lead", "z": t1, "author": "dawon"},
-            {"id": "file-README.md", "type": "file", "label": "README.md", "title": "Project documentation", "z": t1 + 1000, "author": "dawon"},
-            {"id": "file-index.html", "type": "file", "label": "index.html", "title": "Main HTML", "z": t1 + 2000, "author": "dawon"},
+            {
+                "id": "file-README.md", "type": "file", "label": "README.md", "title": "Project documentation", 
+                "z": t1 + 1000, "author": "dawon",
+                "path": "README.md", 
+                "content": "# Web Application Project\nDocumentation for our team project", 
+                "extension": ".md",
+                "commits_by_author": {"dawon": 3, "dongseok": 1},
+                "lines": 50
+            },
+            {
+                "id": "file-index.html", "type": "file", "label": "index.html", "title": "Main HTML", 
+                "z": t1 + 2000, "author": "dawon",
+                "path": "frontend/index.html",
+                "content": "<!DOCTYPE html>\n<html><head><title>App</title></head></html>",
+                "extension": ".html",
+                "commits_by_author": {"dawon": 2, "dongseok": 3},
+                "lines": 100
+            },
             {"id": "commit-init", "type": "commit", "label": "initial", "title": "feat: 프로젝트 초기 세팅", "z": t1 + 3000, "author": "dawon"},
             
             # === Week 2: 규민의 백엔드 API 개발 ===
             {"id": "user-gyumin", "type": "contributor", "label": "규민", "title": "Backend Developer", "z": t2, "author": "gyumin"},
             {"id": "issue-1", "type": "issue", "label": "#1", "title": "백엔드 API 서버 구축 필요", "z": t2 + 1000, "author": "gyumin"},
-            {"id": "file-api.py", "type": "file", "label": "api.py", "title": "Backend API", "z": t2 + 2000, "author": "gyumin"},
-            {"id": "file-database.py", "type": "file", "label": "database.py", "title": "Database module", "z": t2 + 3000, "author": "gyumin"},
+            {
+                "id": "file-api.py", "type": "file", "label": "api.py", "title": "Backend API", 
+                "z": t2 + 2000, "author": "gyumin",
+                "path": "backend/api.py",
+                "content": "from fastapi import FastAPI\nimport uvicorn\n\napp = FastAPI()",
+                "extension": ".py",
+                "commits_by_author": {"gyumin": 15, "dawon": 2},
+                "lines": 200
+            },
+            {
+                "id": "file-database.py", "type": "file", "label": "database.py", "title": "Database module", 
+                "z": t2 + 3000, "author": "gyumin",
+                "path": "backend/database.py",
+                "content": "from sqlalchemy import create_engine\nimport psycopg2",
+                "extension": ".py",
+                "commits_by_author": {"gyumin": 10},
+                "lines": 150
+            },
             {"id": "pr-1", "type": "pull_request", "label": "PR#1", "title": "feat: FastAPI 서버 구현", "z": t2 + 4000, "author": "gyumin"},
             {"id": "commit-api1", "type": "commit", "label": "feat-api", "title": "feat: 사용자 인증 API 추가", "z": t2 + 5000, "author": "gyumin"},
             {"id": "commit-db1", "type": "commit", "label": "feat-db", "title": "feat: 데이터베이스 연결 설정", "z": t2 + 6000, "author": "gyumin"},
@@ -71,8 +109,24 @@ def demo_data():
             # === Week 3: 동석의 프론트엔드 개발 ===
             {"id": "user-dongseok", "type": "contributor", "label": "동석", "title": "Frontend Developer", "z": t3, "author": "dongseok"},
             {"id": "issue-2", "type": "issue", "label": "#2", "title": "사용자 인터페이스 개선", "z": t3 + 1000, "author": "dongseok"},
-            {"id": "file-app.js", "type": "file", "label": "app.js", "title": "Main JS logic", "z": t3 + 2000, "author": "dongseok"},
-            {"id": "file-styles.css", "type": "file", "label": "styles.css", "title": "Stylesheets", "z": t3 + 3000, "author": "dongseok"},
+            {
+                "id": "file-app.js", "type": "file", "label": "app.js", "title": "Main JS logic", 
+                "z": t3 + 2000, "author": "dongseok",
+                "path": "frontend/app.js",
+                "content": "import React from 'react';\nimport ReactDOM from 'react-dom';",
+                "extension": ".js",
+                "commits_by_author": {"dongseok": 20, "jimin": 3},
+                "lines": 300
+            },
+            {
+                "id": "file-styles.css", "type": "file", "label": "styles.css", "title": "Stylesheets", 
+                "z": t3 + 3000, "author": "dongseok",
+                "path": "frontend/styles.css",
+                "content": ".container { display: grid; }",
+                "extension": ".css",
+                "commits_by_author": {"dongseok": 12, "jimin": 2},
+                "lines": 180
+            },
             {"id": "pr-2", "type": "pull_request", "label": "PR#2", "title": "feat: 반응형 UI 구현", "z": t3 + 4000, "author": "dongseok"},
             {"id": "commit-ui1", "type": "commit", "label": "feat-ui", "title": "feat: 로그인 화면 디자인", "z": t3 + 5000, "author": "dongseok"},
             {"id": "commit-ui2", "type": "commit", "label": "style", "title": "style: CSS 그리드 레이아웃 적용", "z": t3 + 6000, "author": "dongseok"},
@@ -86,7 +140,15 @@ def demo_data():
             
             # === Week 5: 동석과 다원의 협업 - 문서화 ===
             {"id": "issue-5", "type": "issue", "label": "#5", "title": "API 문서화 필요", "z": t5, "author": "dawon"},
-            {"id": "file-API_DOCS.md", "type": "file", "label": "API_DOCS.md", "title": "API documentation", "z": t5 + 1000, "author": "dongseok"},
+            {
+                "id": "file-API_DOCS.md", "type": "file", "label": "API_DOCS.md", "title": "API documentation", 
+                "z": t5 + 1000, "author": "dongseok",
+                "path": "docs/API_DOCS.md",
+                "content": "# API Documentation\n## Authentication\n## Endpoints",
+                "extension": ".md",
+                "commits_by_author": {"dongseok": 5, "dawon": 2},
+                "lines": 120
+            },
             {"id": "pr-4", "type": "pull_request", "label": "PR#4", "title": "docs: API 사용 가이드 작성", "z": t5 + 2000, "author": "dongseok"},
             {"id": "commit-docs1", "type": "commit", "label": "docs", "title": "docs: README 업데이트 및 예제 추가", "z": t5 + 3000, "author": "dongseok"},
             
@@ -95,10 +157,27 @@ def demo_data():
             {"id": "commit-mobile", "type": "commit", "label": "fix-css", "title": "fix: 모바일 화면 CSS 수정", "z": t6 + 1000, "author": "dongseok"},
             
             # === 추가 파일들 ===
-            {"id": "file-config.json", "type": "file", "label": "config.json", "title": "Configuration", "z": t2 + 500, "author": "gyumin"},
-            {"id": "file-utils.js", "type": "file", "label": "utils.js", "title": "Utility functions", "z": t3 + 500, "author": "dongseok"},
-        ],
-        "edges": [
+            {
+                "id": "file-config.json", "type": "file", "label": "config.json", "title": "Configuration", 
+                "z": t2 + 500, "author": "gyumin",
+                "path": "backend/config.json",
+                "content": '{"database": "postgresql", "port": 5432}',
+                "extension": ".json",
+                "commits_by_author": {"gyumin": 5},
+                "lines": 20
+            },
+            {
+                "id": "file-utils.js", "type": "file", "label": "utils.js", "title": "Utility functions", 
+                "z": t3 + 500, "author": "dongseok",
+                "path": "frontend/utils.js",
+                "content": "export function formatDate(date) { return date.toString(); }",
+                "extension": ".js",
+                "commits_by_author": {"dongseok": 8, "jimin": 1},
+                "lines": 80
+            },
+        ]
+    
+    edges = [
             # === Week 1: 다원의 초기 작업 ===
             {"source": "user-dawon", "target": "file-README.md", "type": "created"},
             {"source": "user-dawon", "target": "file-index.html", "type": "created"},
@@ -154,7 +233,54 @@ def demo_data():
             {"source": "pr-5", "target": "commit-mobile", "type": "contains"},
             {"source": "commit-mobile", "target": "file-styles.css", "type": "modifies"},
         ]
+    
+    # 파일 노드만 추출하여 분석
+    file_nodes = [node for node in nodes if node.get("type") == "file"]
+    
+    # 도메인 분류
+    classified_files = classify_multiple_files(file_nodes)
+    
+    # 노드 데이터에 도메인 정보 추가
+    for node in nodes:
+        if node.get("type") == "file":
+            matching_file = next(
+                (f for f in classified_files if f["id"] == node["id"]), 
+                None
+            )
+            if matching_file:
+                node["domain"] = matching_file["domain"]
+    
+    # 인사이트 생성
+    insights = generate_insights(classified_files, nodes, edges)
+    
+    # 최종 응답 구성
+    return {
+        "nodes": nodes,
+        "edges": edges,
+        "insights": insights
     }
+
+@app.post("/api/analyze")
+async def analyze_repository(repo_url: str):
+    """GitHub URL을 받아 실제 분석 수행"""
+    
+    # 1. GitHub API로 데이터 수집
+    # raw_data = await fetch_github_data(repo_url)
+    
+    # 2. 파일별 도메인 분류
+    # classified_files = classify_multiple_files(raw_data["files"])
+    
+    # 3. 그래프 데이터 변환
+    # graph_data = transform_to_graph(classified_files)
+    
+    # 4. 인사이트 생성
+    # insights = generate_insights(classified_files, graph_data["nodes"], graph_data["edges"])
+    
+    # 5. 병합하여 반환
+    # return merge_insights_with_graph(graph_data, insights)
+    
+    return {"message": "실제 GitHub API 연동은 구현 필요"}
+
 
 
 if __name__ == "__main__":

@@ -3,14 +3,26 @@ import ForceGraph3D from '3d-force-graph';
 import * as THREE from 'three';
 
 const NODE_COLORS = {
-  issue: '#f85149', pull_request: '#a371f7', commit: '#3fb950', contributor: '#e3b341', file: '#1f6feb'
+  issue: '#f85149', 
+  pull_request: '#a371f7', 
+  commit: '#3fb950', 
+  contributor: '#e3b341', 
+  file: '#1f6feb'
 };
 
-export default function GraphView({ data, selectedContributor, onContributorClick }) {
+const DOMAIN_COLORS = {
+  backend_api: '#FF6B6B',
+  frontend_ui: '#4ECDC4',
+  database: '#45B7D1',
+  visualization: '#FFA07A',
+  authentication: '#98D8C8',
+  uncategorized: '#95A5A6'
+};
+
+export default function GraphView({ data, selectedContributor, selectedDomain, onContributorClick }) {
   const containerRef = useRef(null);
   const graphRef = useRef(null);
 
-  // 텍스트 라벨 생성 보조 함수
   const createTextLabel = (text, position, color = '#021550') => {
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
@@ -27,7 +39,6 @@ export default function GraphView({ data, selectedContributor, onContributorClic
     return sprite;
   };
 
-  // BFS 로직 (내부 유지)
   const getRelatedNodeIds = (contributorId, graphData) => {
     if (!contributorId) return new Set();
     const related = new Set([contributorId]);
@@ -77,18 +88,16 @@ export default function GraphView({ data, selectedContributor, onContributorClic
     };
   }, []);
 
-  // 2. 데이터 업데이트 및 씬(축) 구성
+  // 2. 데이터 업데이트
   useEffect(() => {
     if (!graphRef.current || !data.nodes.length) return;
 
     const graph = graphRef.current;
     graph.graphData(data);
 
-    // Z축 고정 드래그 로직
     graph.onNodeDrag(node => { node.fz = node.baseZ; })
          .onNodeDragEnd(node => { node.fz = node.baseZ; });
 
-    // 축 및 그리드 추가
     const scene = graph.scene();
     const toRemove = scene.children.filter(obj => obj.isCustomAxis);
     toRemove.forEach(obj => scene.remove(obj));
@@ -117,19 +126,19 @@ export default function GraphView({ data, selectedContributor, onContributorClic
     grid.isCustomAxis = true;
     scene.add(grid);
 
-    // 카메라 초기 위치
     setTimeout(() => {
       graph.cameraPosition({ x: 300, y: 300, z: 400 }, { x: 0, y: 0, z: 100 }, 1000);
     }, 200);
   }, [data]);
 
-  // 3. 필터링 및 강조 로직 (기여자 선택 시 작동)
+  // 3. 필터링 로직 (기여자 + 도메인)
   useEffect(() => {
     if (!graphRef.current || !data.nodes.length) return;
 
     const graph = graphRef.current;
     const relatedIds = selectedContributor ? getRelatedNodeIds(selectedContributor, data) : new Set();
 
+    // 기여자 필터링이 활성화된 경우
     if (selectedContributor) {
       graph
         .nodeColor(node => relatedIds.has(node.id) ? (NODE_COLORS[node.type] || '#888') : '#f5f5f5')
@@ -148,14 +157,37 @@ export default function GraphView({ data, selectedContributor, onContributorClic
           const t = typeof link.target === 'object' ? link.target.id : link.target;
           return (relatedIds.has(s) && relatedIds.has(t)) ? 0.7 : 0.08;
         });
-    } else {
+    }
+    // 도메인 필터링이 활성화된 경우
+    else if (selectedDomain) {
       graph
-        .nodeColor(node => NODE_COLORS[node.type] || '#888')
+        .nodeColor(node => {
+          // 파일 노드는 도메인별 색상, 해당 도메인이면 강조
+          if (node.type === 'file') {
+            return node.domain === selectedDomain 
+              ? (DOMAIN_COLORS[node.domain] || NODE_COLORS.file)
+              : '#e0e0e0';
+          }
+          // 다른 노드는 희미하게
+          return '#e0e0e0';
+        })
+        .linkOpacity(0.1);
+    }
+    // 전체 모드
+    else {
+      graph
+        .nodeColor(node => {
+          // 파일 노드는 도메인 색상 사용
+          if (node.type === 'file' && node.domain) {
+            return DOMAIN_COLORS[node.domain] || NODE_COLORS.file;
+          }
+          return NODE_COLORS[node.type] || '#888';
+        })
         .linkColor(() => '#021550')
         .linkOpacity(0.2)
         .linkWidth(1);
     }
-  }, [selectedContributor, data]);
+  }, [selectedContributor, selectedDomain, data]);
 
   return <div ref={containerRef} style={{ width: '100%', height: '100%' }} />;
 }

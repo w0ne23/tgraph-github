@@ -1,6 +1,7 @@
 export default function ControlPanel({ 
   viewMode, setViewMode, contributors, 
-  selectedContributor, onContributorSelect 
+  selectedContributor, onContributorSelect,
+  onShowDashboard  // ✨ 새로 추가
 }) {
   const handleViewModeChange = (mode) => {
     setViewMode(mode);
@@ -22,6 +23,38 @@ export default function ControlPanel({
         <ModeButton active={viewMode === 'all'} onClick={() => handleViewModeChange('all')} label="🌐 전체 뷰" />
         <ModeButton active={viewMode === 'contributor-focused'} onClick={() => handleViewModeChange('contributor-focused')} label="👥 기여자 중심" />
       </div>
+
+      {/* ✨ 프로젝트 분석 버튼 추가 */}
+      <button
+        onClick={onShowDashboard}
+        style={{
+          width: '100%',
+          padding: '12px',
+          fontSize: '13px',
+          fontWeight: 'bold',
+          borderRadius: '8px',
+          border: '2px solid #0969da',
+          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          color: 'white',
+          cursor: 'pointer',
+          transition: 'all 0.2s',
+          marginBottom: '16px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '8px'
+        }}
+        onMouseOver={(e) => {
+          e.currentTarget.style.transform = 'translateY(-2px)';
+          e.currentTarget.style.boxShadow = '0 4px 12px rgba(102, 126, 234, 0.4)';
+        }}
+        onMouseOut={(e) => {
+          e.currentTarget.style.transform = 'translateY(0)';
+          e.currentTarget.style.boxShadow = 'none';
+        }}
+      >
+        📊 프로젝트 분석 보기
+      </button>
 
       {viewMode === 'contributor-focused' && (
         <>
