@@ -5,6 +5,7 @@ venv_github/
 .venv_github/
 __pycache__/
 *.pyc
+venv_github/
 
 # --- Node/React ---
 node_modules/
@@ -17,3 +18,6 @@ dist/
 # --- IDE ---
 .vscode/
 .idea/
+
+# MacOS
+.DS_Store
