@@ -1,6 +1,7 @@
 """FastAPI 서버 - T-Graph 데이터 제공"""
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi import File, UploadFile
 
 from github_client import fetch_repo_data
 from transformer import transform_to_tgraph
@@ -11,6 +12,8 @@ import json
 
 from analyzers.domain_classifier import classify_multiple_files, extract_imports, classify_file
 from analyzers.insight_generator import generate_insights, merge_insights_with_graph
+
+from pathlib import Path
 
 app = FastAPI(title="T-Graph GitHub API")
 
@@ -44,6 +47,72 @@ async def get_tgraph(owner: str, repo: str, limit: int = 10):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+
+@app.get("/api/load-json")
+def load_json_file(filename: str = "data.json"):
+    """backend/github_data/ 폴더의 JSON 파일을 읽어서 처리"""
+    
+    # JSON 파일 경로
+    json_path = Path(__file__).parent / "github_data" / filename
+    
+    if not json_path.exists():
+        raise HTTPException(
+            status_code=404, 
+            detail=f"파일을 찾을 수 없습니다: github_data/{filename}"
+        )
+    
+    try:
+        # JSON 파일 읽기
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        nodes = data.get("nodes", [])
+        edges = data.get("edges", [])
+        
+        # 파일 노드만 추출
+        file_nodes = [node for node in nodes if node.get("type") == "file"]
+        
+        # 도메인 분류
+        classified_files = classify_multiple_files(file_nodes)
+        
+        # 노드에 도메인 정보 추가
+        for node in nodes:
+            if node.get("type") == "file":
+                matching_file = next(
+                    (f for f in classified_files if f["id"] == node["id"]), 
+                    None
+                )
+                if matching_file:
+                    node["domain"] = matching_file["domain"]
+        
+        # 인사이트 생성
+        insights = generate_insights(classified_files, nodes, edges)
+        
+        # 최종 응답
+        return {
+            "nodes": nodes,
+            "edges": edges,
+            "insights": insights
+        }
+    
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=400, detail="잘못된 JSON 형식입니다")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/list-json-files")
+def list_json_files():
+    """github_data 폴더의 모든 JSON 파일 목록 반환"""
+    
+    json_dir = Path(__file__).parent / "github_data"
+    
+    if not json_dir.exists():
+        return {"files": [], "message": "github_data 폴더가 없습니다"}
+    
+    json_files = [f.name for f in json_dir.glob("*.json")]
+    
+    return {"files": json_files}
 
 # 토큰 없이 테스트용 더미 데이터
 @app.get("/api/demo")

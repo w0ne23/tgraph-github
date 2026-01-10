@@ -1,0 +1,3582 @@
+{
+  "nodes": [
+    {
+      "id": "user-Kimmovingrock",
+      "type": "contributor",
+      "label": "Kimmovingrock",
+      "title": null,
+      "z": 0,
+      "author": "Kimmovingrock",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116498744?v=4"
+    },
+    {
+      "id": "user-w0ne23",
+      "type": "contributor",
+      "label": "w0ne23",
+      "title": "d_onw0",
+      "z": 0,
+      "author": "w0ne23",
+      "avatar_url": "https://avatars.githubusercontent.com/u/150269215?u=c93e63152cc3bce804e5e6dbf348877fbc3f463e&v=4"
+    },
+    {
+      "id": "user-KMIN111",
+      "type": "contributor",
+      "label": "KMIN111",
+      "title": null,
+      "z": 0,
+      "author": "KMIN111",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181315924?v=4"
+    },
+    {
+      "id": "user-uz030",
+      "type": "contributor",
+      "label": "uz030",
+      "title": "yujin",
+      "z": 0,
+      "author": "uz030",
+      "avatar_url": "https://avatars.githubusercontent.com/u/190855185?u=220ea45c014fd439a0869d35dbe5bf79fe80affa&v=4"
+    },
+    {
+      "id": "issue-1",
+      "type": "issue",
+      "label": "#1",
+      "title": "[Feat]: 진단 페이지 생성",
+      "timestamp": "2025-11-09T10:00:33Z",
+      "z": 1762682433.0,
+      "author": "w0ne23",
+      "state": "CLOSED",
+      "body": "",
+      "labels": []
+    },
+    {
+      "id": "pr-17",
+      "type": "pull_request",
+      "label": "PR#17",
+      "title": "최종",
+      "timestamp": "2025-12-15T01:44:10Z",
+      "z": 1765763050.0,
+      "author": "w0ne23",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-15T01:44:18Z",
+      "head_branch": "develop",
+      "base_branch": "main"
+    },
+    {
+      "id": "commit-c3f3e82",
+      "type": "commit",
+      "label": "c3f3e82",
+      "title": "profile 불필요 UI 제거",
+      "timestamp": "2025-12-13T15:11:44Z",
+      "z": 1765638704.0,
+      "author": "Jeong-dawon",
+      "message": "profile 불필요 UI 제거"
+    },
+    {
+      "id": "commit-4f75335",
+      "type": "commit",
+      "label": "4f75335",
+      "title": "profile 건강 점수 반영",
+      "timestamp": "2025-12-13T15:18:56Z",
+      "z": 1765639136.0,
+      "author": "Jeong-dawon",
+      "message": "profile 건강 점수 반영"
+    },
+    {
+      "id": "commit-d67ce49",
+      "type": "commit",
+      "label": "d67ce49",
+      "title": "Merge pull request #14 from Personal-Therapy/featu",
+      "timestamp": "2025-12-13T15:34:16Z",
+      "z": 1765640056.0,
+      "author": "Kimmovingrock",
+      "message": "Merge pull request #14 from Personal-Therapy/feature/app-branding\n\nFeature/app branding"
+    },
+    {
+      "id": "commit-f50d6c7",
+      "type": "commit",
+      "label": "f50d6c7",
+      "title": "manifest파일 수정",
+      "timestamp": "2025-12-13T15:53:51Z",
+      "z": 1765641231.0,
+      "author": "Jeong-dawon",
+      "message": "manifest파일 수정"
+    },
+    {
+      "id": "commit-82f3f99",
+      "type": "commit",
+      "label": "82f3f99",
+      "title": "수정",
+      "timestamp": "2025-12-13T15:57:16Z",
+      "z": 1765641436.0,
+      "author": "yujin-seo-oss",
+      "message": "수정"
+    },
+    {
+      "id": "commit-8edaa5b",
+      "type": "commit",
+      "label": "8edaa5b",
+      "title": "Merge branch 'develop' of https://github.com/Perso",
+      "timestamp": "2025-12-13T15:57:21Z",
+      "z": 1765641441.0,
+      "author": "yujin-seo-oss",
+      "message": "Merge branch 'develop' of https://github.com/Personal-Therapy/pt-flutter into develop"
+    },
+    {
+      "id": "commit-0550627",
+      "type": "commit",
+      "label": "0550627",
+      "title": "알고리즘 수정 + 기존 오류 수정",
+      "timestamp": "2025-12-13T17:15:41Z",
+      "z": 1765646141.0,
+      "author": "yujin-seo-oss",
+      "message": "알고리즘 수정 + 기존 오류 수정"
+    },
+    {
+      "id": "commit-7b6fae8",
+      "type": "commit",
+      "label": "7b6fae8",
+      "title": "알고리즘 반영 수정",
+      "timestamp": "2025-12-14T01:33:30Z",
+      "z": 1765676010.0,
+      "author": "yujin-seo-oss",
+      "message": "알고리즘 반영 수정"
+    },
+    {
+      "id": "commit-85c9a58",
+      "type": "commit",
+      "label": "85c9a58",
+      "title": "감정 추적 aichat 반영",
+      "timestamp": "2025-12-14T02:39:02Z",
+      "z": 1765679942.0,
+      "author": "Jeong-dawon",
+      "message": "감정 추적 aichat 반영"
+    },
+    {
+      "id": "commit-5b104dc",
+      "type": "commit",
+      "label": "5b104dc",
+      "title": "profile finalscore 반영",
+      "timestamp": "2025-12-14T02:51:51Z",
+      "z": 1765680711.0,
+      "author": "Jeong-dawon",
+      "message": "profile finalscore 반영"
+    },
+    {
+      "id": "file-android/app/src/main/AndroidManifest.xml",
+      "type": "file",
+      "label": "AndroidManifest.xml",
+      "title": "android/app/src/main/AndroidManifest.xml",
+      "z": 0,
+      "path": "android/app/src/main/AndroidManifest.xml",
+      "extension": ".xml",
+      "additions": 8,
+      "deletions": 28
+    },
+    {
+      "id": "file-android/build/reports/problems/problems-report.html",
+      "type": "file",
+      "label": "problems-report.html",
+      "title": "android/build/reports/problems/problems-report.html",
+      "z": 0,
+      "path": "android/build/reports/problems/problems-report.html",
+      "extension": ".html",
+      "additions": 1,
+      "deletions": 1
+    },
+    {
+      "id": "file-lib/aichat_screen.dart",
+      "type": "file",
+      "label": "aichat_screen.dart",
+      "title": "lib/aichat_screen.dart",
+      "z": 0,
+      "path": "lib/aichat_screen.dart",
+      "extension": ".dart",
+      "additions": 148,
+      "deletions": 13
+    },
+    {
+      "id": "file-lib/emotion_tracking_tab.dart",
+      "type": "file",
+      "label": "emotion_tracking_tab.dart",
+      "title": "lib/emotion_tracking_tab.dart",
+      "z": 0,
+      "path": "lib/emotion_tracking_tab.dart",
+      "extension": ".dart",
+      "additions": 623,
+      "deletions": 400
+    },
+    {
+      "id": "file-lib/healing_screen.dart",
+      "type": "file",
+      "label": "healing_screen.dart",
+      "title": "lib/healing_screen.dart",
+      "z": 0,
+      "path": "lib/healing_screen.dart",
+      "extension": ".dart",
+      "additions": 89,
+      "deletions": 34
+    },
+    {
+      "id": "file-lib/health_result_page.dart",
+      "type": "file",
+      "label": "health_result_page.dart",
+      "title": "lib/health_result_page.dart",
+      "z": 0,
+      "path": "lib/health_result_page.dart",
+      "extension": ".dart",
+      "additions": 101,
+      "deletions": 3
+    },
+    {
+      "id": "file-lib/main_screen.dart",
+      "type": "file",
+      "label": "main_screen.dart",
+      "title": "lib/main_screen.dart",
+      "z": 0,
+      "path": "lib/main_screen.dart",
+      "extension": ".dart",
+      "additions": 198,
+      "deletions": 113
+    },
+    {
+      "id": "file-lib/profile_tab.dart",
+      "type": "file",
+      "label": "profile_tab.dart",
+      "title": "lib/profile_tab.dart",
+      "z": 0,
+      "path": "lib/profile_tab.dart",
+      "extension": ".dart",
+      "additions": 129,
+      "deletions": 112
+    },
+    {
+      "id": "file-lib/services/firestore_service.dart",
+      "type": "file",
+      "label": "firestore_service.dart",
+      "title": "lib/services/firestore_service.dart",
+      "z": 0,
+      "path": "lib/services/firestore_service.dart",
+      "extension": ".dart",
+      "additions": 151,
+      "deletions": 7
+    },
+    {
+      "id": "file-lib/services/healing_recommendation_service.dart",
+      "type": "file",
+      "label": "healing_recommendation_service.dart",
+      "title": "lib/services/healing_recommendation_service.dart",
+      "z": 0,
+      "path": "lib/services/healing_recommendation_service.dart",
+      "extension": ".dart",
+      "additions": 106,
+      "deletions": 2
+    },
+    {
+      "id": "file-lib/services/health_service.dart",
+      "type": "file",
+      "label": "health_service.dart",
+      "title": "lib/services/health_service.dart",
+      "z": 0,
+      "path": "lib/services/health_service.dart",
+      "extension": ".dart",
+      "additions": 62,
+      "deletions": 6
+    },
+    {
+      "id": "file-lib/wearable_device_screen.dart",
+      "type": "file",
+      "label": "wearable_device_screen.dart",
+      "title": "lib/wearable_device_screen.dart",
+      "z": 0,
+      "path": "lib/wearable_device_screen.dart",
+      "extension": ".dart",
+      "additions": 144,
+      "deletions": 80
+    },
+    {
+      "id": "file-pubspec.lock",
+      "type": "file",
+      "label": "pubspec.lock",
+      "title": "pubspec.lock",
+      "z": 0,
+      "path": "pubspec.lock",
+      "extension": ".lock",
+      "additions": 4,
+      "deletions": 4
+    },
+    {
+      "id": "pr-16",
+      "type": "pull_request",
+      "label": "PR#16",
+      "title": "점수 기반 알고리즘 반영",
+      "timestamp": "2025-12-14T01:34:52Z",
+      "z": 1765676092.0,
+      "author": "uz030",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-14T04:05:04Z",
+      "head_branch": "score_branch",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-9d2947e",
+      "type": "commit",
+      "label": "9d2947e",
+      "title": "Merge branch 'develop' into score_branch",
+      "timestamp": "2025-12-14T04:04:56Z",
+      "z": 1765685096.0,
+      "author": "d_onw0",
+      "message": "Merge branch 'develop' into score_branch"
+    },
+    {
+      "id": "pr-15",
+      "type": "pull_request",
+      "label": "PR#15",
+      "title": "AIChat 내용 저장 불러오기 기록삭제 / 추적 탭 ui 수정",
+      "timestamp": "2025-12-13T20:21:58Z",
+      "z": 1765657318.0,
+      "author": "KMIN111",
+      "state": "CLOSED",
+      "merged": false,
+      "merged_at": null,
+      "head_branch": "main",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-045b315",
+      "type": "commit",
+      "label": "045b315",
+      "title": "Remove ios/build artifacts from tracking",
+      "timestamp": "2025-12-13T15:56:11Z",
+      "z": 1765641371.0,
+      "author": "정규민",
+      "message": "Remove ios/build artifacts from tracking"
+    },
+    {
+      "id": "commit-7d52b07",
+      "type": "commit",
+      "label": "7d52b07",
+      "title": "주간, 월간 감정분석 적절한 값 하드코딩",
+      "timestamp": "2025-12-13T15:56:11Z",
+      "z": 1765641371.0,
+      "author": "정규민",
+      "message": "주간, 월간 감정분석 적절한 값 하드코딩"
+    },
+    {
+      "id": "commit-d179706",
+      "type": "commit",
+      "label": "d179706",
+      "title": "일간 감정 점수 평균으로 구현",
+      "timestamp": "2025-12-13T17:33:39Z",
+      "z": 1765647219.0,
+      "author": "정규민",
+      "message": "일간 감정 점수 평균으로 구현"
+    },
+    {
+      "id": "commit-93640bb",
+      "type": "commit",
+      "label": "93640bb",
+      "title": "AIChat 내용 저장, 불러내기 / 추적 탭 수정",
+      "timestamp": "2025-12-13T20:15:16Z",
+      "z": 1765656916.0,
+      "author": "정규민",
+      "message": "AIChat 내용 저장, 불러내기 / 추적 탭 수정"
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/01d1aa117251c355f85058d78eaa7ad9",
+      "type": "file",
+      "label": "01d1aa117251c355f85058d78eaa7ad9",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/01d1aa117251c355f85058d78eaa7ad9",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/01d1aa117251c355f85058d78eaa7ad9",
+      "extension": "",
+      "additions": 0,
+      "deletions": 1
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/01f61f66cd6b4cd276fede67f35a3065",
+      "type": "file",
+      "label": "01f61f66cd6b4cd276fede67f35a3065",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/01f61f66cd6b4cd276fede67f35a3065",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/01f61f66cd6b4cd276fede67f35a3065",
+      "extension": "",
+      "additions": 0,
+      "deletions": 7
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0245645c246cff6b63c0318c1e79eff5",
+      "type": "file",
+      "label": "0245645c246cff6b63c0318c1e79eff5",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0245645c246cff6b63c0318c1e79eff5",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0245645c246cff6b63c0318c1e79eff5",
+      "extension": "",
+      "additions": 0,
+      "deletions": 1
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/026e883e085bb94173ce6a1bec423ee8",
+      "type": "file",
+      "label": "026e883e085bb94173ce6a1bec423ee8",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/026e883e085bb94173ce6a1bec423ee8",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/026e883e085bb94173ce6a1bec423ee8",
+      "extension": "",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/02c368b892cf9fdaf016af90dc6d7e8a",
+      "type": "file",
+      "label": "02c368b892cf9fdaf016af90dc6d7e8a",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/02c368b892cf9fdaf016af90dc6d7e8a",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/02c368b892cf9fdaf016af90dc6d7e8a",
+      "extension": "",
+      "additions": 0,
+      "deletions": 1
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0336df27faefe57299e02dd2e906c25e",
+      "type": "file",
+      "label": "0336df27faefe57299e02dd2e906c25e",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0336df27faefe57299e02dd2e906c25e",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0336df27faefe57299e02dd2e906c25e",
+      "extension": "",
+      "additions": 0,
+      "deletions": 4
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/03b45a1f4d94c3ec032c7dec7b8e16a3",
+      "type": "file",
+      "label": "03b45a1f4d94c3ec032c7dec7b8e16a3",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/03b45a1f4d94c3ec032c7dec7b8e16a3",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/03b45a1f4d94c3ec032c7dec7b8e16a3",
+      "extension": "",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/04243bb57083504b3132ecc39060ea0e",
+      "type": "file",
+      "label": "04243bb57083504b3132ecc39060ea0e",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/04243bb57083504b3132ecc39060ea0e",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/04243bb57083504b3132ecc39060ea0e",
+      "extension": "",
+      "additions": 0,
+      "deletions": 52
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/044a6fdfc02bdd648746cfaa9bf526af",
+      "type": "file",
+      "label": "044a6fdfc02bdd648746cfaa9bf526af",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/044a6fdfc02bdd648746cfaa9bf526af",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/044a6fdfc02bdd648746cfaa9bf526af",
+      "extension": "",
+      "additions": 0,
+      "deletions": 5
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/051d8eead2e1c272c997dfa63543a877",
+      "type": "file",
+      "label": "051d8eead2e1c272c997dfa63543a877",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/051d8eead2e1c272c997dfa63543a877",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/051d8eead2e1c272c997dfa63543a877",
+      "extension": "",
+      "additions": 0,
+      "deletions": 23
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/06c8f1d21708796f2b276f6248905a9d",
+      "type": "file",
+      "label": "06c8f1d21708796f2b276f6248905a9d",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/06c8f1d21708796f2b276f6248905a9d",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/06c8f1d21708796f2b276f6248905a9d",
+      "extension": "",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0c2c7ab89954ec86f32cc86e93b49dfe",
+      "type": "file",
+      "label": "0c2c7ab89954ec86f32cc86e93b49dfe",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0c2c7ab89954ec86f32cc86e93b49dfe",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0c2c7ab89954ec86f32cc86e93b49dfe",
+      "extension": "",
+      "additions": 0,
+      "deletions": 5
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0c67f7fea4315701f41d6765de2efd25",
+      "type": "file",
+      "label": "0c67f7fea4315701f41d6765de2efd25",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0c67f7fea4315701f41d6765de2efd25",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0c67f7fea4315701f41d6765de2efd25",
+      "extension": "",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0ce4bf29189fff5412cea7aa06d742e1",
+      "type": "file",
+      "label": "0ce4bf29189fff5412cea7aa06d742e1",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0ce4bf29189fff5412cea7aa06d742e1",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0ce4bf29189fff5412cea7aa06d742e1",
+      "extension": "",
+      "additions": 0,
+      "deletions": 1
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/1255916a12232c241a90570758ec1b20",
+      "type": "file",
+      "label": "1255916a12232c241a90570758ec1b20",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/1255916a12232c241a90570758ec1b20",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/1255916a12232c241a90570758ec1b20",
+      "extension": "",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/15b4083e71a3d57975ea9ea67ac4b4e1",
+      "type": "file",
+      "label": "15b4083e71a3d57975ea9ea67ac4b4e1",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/15b4083e71a3d57975ea9ea67ac4b4e1",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/15b4083e71a3d57975ea9ea67ac4b4e1",
+      "extension": "",
+      "additions": 0,
+      "deletions": 1
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/1629caef7b4848720a09c57ae123be12",
+      "type": "file",
+      "label": "1629caef7b4848720a09c57ae123be12",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/1629caef7b4848720a09c57ae123be12",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/1629caef7b4848720a09c57ae123be12",
+      "extension": "",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/16d87c28a3ee45aaa892bcc40749b11f",
+      "type": "file",
+      "label": "16d87c28a3ee45aaa892bcc40749b11f",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/16d87c28a3ee45aaa892bcc40749b11f",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/16d87c28a3ee45aaa892bcc40749b11f",
+      "extension": "",
+      "additions": 0,
+      "deletions": 4
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/172533f8de6b63ed0b25ae218b799c05",
+      "type": "file",
+      "label": "172533f8de6b63ed0b25ae218b799c05",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/172533f8de6b63ed0b25ae218b799c05",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/172533f8de6b63ed0b25ae218b799c05",
+      "extension": "",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/177119fae201e6bee34a3ffe6e4f9fc6",
+      "type": "file",
+      "label": "177119fae201e6bee34a3ffe6e4f9fc6",
+      "title": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/177119fae201e6bee34a3ffe6e4f9fc6",
+      "z": 0,
+      "path": "ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/177119fae201e6bee34a3ffe6e4f9fc6",
+      "extension": "",
+      "additions": 0,
+      "deletions": 30
+    },
+    {
+      "id": "pr-14",
+      "type": "pull_request",
+      "label": "PR#14",
+      "title": "Feature/app branding",
+      "timestamp": "2025-12-13T15:33:56Z",
+      "z": 1765640036.0,
+      "author": "Kimmovingrock",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-13T15:34:16Z",
+      "head_branch": "feature/app-branding",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-f3bf0f3",
+      "type": "commit",
+      "label": "f3bf0f3",
+      "title": "Merge pull request #3 from Personal-Therapy/develo",
+      "timestamp": "2025-11-10T15:19:40Z",
+      "z": 1762787980.0,
+      "author": "Kimmovingrock",
+      "message": "Merge pull request #3 from Personal-Therapy/develop\n\nDevelop"
+    },
+    {
+      "id": "commit-82186f4",
+      "type": "commit",
+      "label": "82186f4",
+      "title": "werable기기연동 화면구현",
+      "timestamp": "2025-11-11T05:29:51Z",
+      "z": 1762838991.0,
+      "author": "mvrock",
+      "message": "werable기기연동 화면구현"
+    },
+    {
+      "id": "commit-2a4a4ea",
+      "type": "commit",
+      "label": "2a4a4ea",
+      "title": "Update README.md",
+      "timestamp": "2025-12-13T07:05:15Z",
+      "z": 1765609515.0,
+      "author": "Kimmovingrock",
+      "message": "Update README.md"
+    },
+    {
+      "id": "commit-d25c0ad",
+      "type": "commit",
+      "label": "d25c0ad",
+      "title": "feat: 앱 브랜딩 및 UX 개선",
+      "timestamp": "2025-12-13T15:15:19Z",
+      "z": 1765638919.0,
+      "author": "mvrock",
+      "message": "feat: 앱 브랜딩 및 UX 개선\n\n- 앱 이름을 \"Personal Therapy\"로 변경 (Android, iOS)\n- 앱 아이콘 추가 및 적용\n  - flutter_launcher_icons 패키지 사용\n  - Android adaptive icon 지원 (60% 크기, 흰색 배경)\n  - iOS 모든 크기 아이콘 생성\n- 메인 화면 UI 개선\n  - 정신건강 진단/웨어러블 카드 레이아웃 자동 조정\n  - 고정 높이 제거, 내용물에 맞게 동적 크기 조정\n- 뒤로가기 UX 개선\n  - 홈 탭에서 뒤로가기 2번 연속 클릭 시 앱 종료\n  - 첫 번째 클릭 시 스낵바로 안내 메시지 표시\n  - 다른 탭에서는 홈 탭으로 이동\n  - AppBar 뒤로가기 버튼 제거\n\n🤖 Generated with Claude Code (https://claude.com/claude-code)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "id": "commit-3a751e8",
+      "type": "commit",
+      "label": "3a751e8",
+      "title": "Merge branch 'main' into feature/app-branding",
+      "timestamp": "2025-12-13T15:31:34Z",
+      "z": 1765639894.0,
+      "author": "d_onw0",
+      "message": "Merge branch 'main' into feature/app-branding"
+    },
+    {
+      "id": "file-android/app/src/main/res/drawable-hdpi/ic_launcher_foreground.png",
+      "type": "file",
+      "label": "ic_launcher_foreground.png",
+      "title": "android/app/src/main/res/drawable-hdpi/ic_launcher_foreground.png",
+      "z": 0,
+      "path": "android/app/src/main/res/drawable-hdpi/ic_launcher_foreground.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/drawable-mdpi/ic_launcher_foreground.png",
+      "type": "file",
+      "label": "ic_launcher_foreground.png",
+      "title": "android/app/src/main/res/drawable-mdpi/ic_launcher_foreground.png",
+      "z": 0,
+      "path": "android/app/src/main/res/drawable-mdpi/ic_launcher_foreground.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/drawable-xhdpi/ic_launcher_foreground.png",
+      "type": "file",
+      "label": "ic_launcher_foreground.png",
+      "title": "android/app/src/main/res/drawable-xhdpi/ic_launcher_foreground.png",
+      "z": 0,
+      "path": "android/app/src/main/res/drawable-xhdpi/ic_launcher_foreground.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/drawable-xxhdpi/ic_launcher_foreground.png",
+      "type": "file",
+      "label": "ic_launcher_foreground.png",
+      "title": "android/app/src/main/res/drawable-xxhdpi/ic_launcher_foreground.png",
+      "z": 0,
+      "path": "android/app/src/main/res/drawable-xxhdpi/ic_launcher_foreground.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/drawable-xxxhdpi/ic_launcher_foreground.png",
+      "type": "file",
+      "label": "ic_launcher_foreground.png",
+      "title": "android/app/src/main/res/drawable-xxxhdpi/ic_launcher_foreground.png",
+      "z": 0,
+      "path": "android/app/src/main/res/drawable-xxxhdpi/ic_launcher_foreground.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "type": "file",
+      "label": "ic_launcher.xml",
+      "title": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "z": 0,
+      "path": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "extension": ".xml",
+      "additions": 5,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "type": "file",
+      "label": "ic_launcher.png",
+      "title": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "z": 0,
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "type": "file",
+      "label": "ic_launcher.png",
+      "title": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "z": 0,
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "type": "file",
+      "label": "ic_launcher.png",
+      "title": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "z": 0,
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "type": "file",
+      "label": "ic_launcher.png",
+      "title": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "z": 0,
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "type": "file",
+      "label": "ic_launcher.png",
+      "title": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "z": 0,
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/res/values/colors.xml",
+      "type": "file",
+      "label": "colors.xml",
+      "title": "android/app/src/main/res/values/colors.xml",
+      "z": 0,
+      "path": "android/app/src/main/res/values/colors.xml",
+      "extension": ".xml",
+      "additions": 4,
+      "deletions": 0
+    },
+    {
+      "id": "file-assets/images/app_icon.png",
+      "type": "file",
+      "label": "app_icon.png",
+      "title": "assets/images/app_icon.png",
+      "z": 0,
+      "path": "assets/images/app_icon.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-assets/images/app_icon_adaptive.png",
+      "type": "file",
+      "label": "app_icon_adaptive.png",
+      "title": "assets/images/app_icon_adaptive.png",
+      "z": 0,
+      "path": "assets/images/app_icon_adaptive.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/Runner.xcodeproj/project.pbxproj",
+      "type": "file",
+      "label": "project.pbxproj",
+      "title": "ios/Runner.xcodeproj/project.pbxproj",
+      "z": 0,
+      "path": "ios/Runner.xcodeproj/project.pbxproj",
+      "extension": ".pbxproj",
+      "additions": 2,
+      "deletions": 2
+    },
+    {
+      "id": "file-ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "type": "file",
+      "label": "Icon-App-1024x1024@1x.png",
+      "title": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "z": 0,
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+      "type": "file",
+      "label": "Icon-App-20x20@1x.png",
+      "title": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+      "z": 0,
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+      "type": "file",
+      "label": "Icon-App-20x20@2x.png",
+      "title": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+      "z": 0,
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+      "type": "file",
+      "label": "Icon-App-20x20@3x.png",
+      "title": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+      "z": 0,
+      "path": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+      "extension": ".png",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "pr-13",
+      "type": "pull_request",
+      "label": "PR#13",
+      "title": "Feature/app branding",
+      "timestamp": "2025-12-13T15:16:30Z",
+      "z": 1765638990.0,
+      "author": "Kimmovingrock",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-13T15:31:46Z",
+      "head_branch": "feature/app-branding",
+      "base_branch": "main"
+    },
+    {
+      "id": "commit-30c0ba3",
+      "type": "commit",
+      "label": "30c0ba3",
+      "title": "Merge branch 'develop' of https://github.com/Perso",
+      "timestamp": "2025-11-10T13:56:12Z",
+      "z": 1762782972.0,
+      "author": "yujin-seo-oss",
+      "message": "Merge branch 'develop' of https://github.com/Personal-Therapy/pt-flutter"
+    },
+    {
+      "id": "commit-fce3938",
+      "type": "commit",
+      "label": "fce3938",
+      "title": "Merge remote-tracking branch 'origin/develop' into",
+      "timestamp": "2025-11-10T15:15:53Z",
+      "z": 1762787753.0,
+      "author": "yujin-seo-oss",
+      "message": "Merge remote-tracking branch 'origin/develop' into develop"
+    },
+    {
+      "id": "commit-ac09784",
+      "type": "commit",
+      "label": "ac09784",
+      "title": "유튜브 연동하기, 헬스 커넥터 연동 시도",
+      "timestamp": "2025-11-18T10:09:12Z",
+      "z": 1763460552.0,
+      "author": "yujin-seo-oss",
+      "message": "유튜브 연동하기, 헬스 커넥터 연동 시도"
+    },
+    {
+      "id": "commit-1aad6f1",
+      "type": "commit",
+      "label": "1aad6f1",
+      "title": "gitignore_update",
+      "timestamp": "2025-11-21T10:07:14Z",
+      "z": 1763719634.0,
+      "author": "Kimmovingrock",
+      "message": "gitignore_update"
+    },
+    {
+      "id": "commit-c2cf025",
+      "type": "commit",
+      "label": "c2cf025",
+      "title": "feat: Implement dynamic data for emotion tracking ",
+      "timestamp": "2025-12-02T04:51:28Z",
+      "z": 1764651088.0,
+      "author": "mvrock",
+      "message": "feat: Implement dynamic data for emotion tracking and AI chat integration\n\n- Fix RenderFlex overflow in emotion_tracking_tab.dart.\n- Remove hardcoded sleep time and data generation.\n- Implement dynamic average calculation for stress, health, and sleep from Firestore.\n- Refactor FirestoreService for sleep records (addSleepRecord, getSleepScoresStream).\n- Update profile_tab.dart to use new addSleepRecord method.\n- Integrate AI chat: Connect 'AI와 대화' quick action to AIChatScreen.\n- Ensure geminiApiKey is loaded from .env."
+    },
+    {
+      "id": "commit-5dcf05b",
+      "type": "commit",
+      "label": "5dcf05b",
+      "title": "docs: Update README.md with comprehensive project ",
+      "timestamp": "2025-12-02T04:57:15Z",
+      "z": 1764651435.0,
+      "author": "mvrock",
+      "message": "docs: Update README.md with comprehensive project details\n\n- Added detailed features, technical stack, and setup instructions.\n- Clarified Firebase and Gemini API integration steps.\n- Provided instructions for .env file setup.\n- Enhanced overall project overview."
+    },
+    {
+      "id": "commit-9462d9a",
+      "type": "commit",
+      "label": "9462d9a",
+      "title": "docs: Add project_structure.md detailing applicati",
+      "timestamp": "2025-12-02T05:53:52Z",
+      "z": 1764654832.0,
+      "author": "mvrock",
+      "message": "docs: Add project_structure.md detailing application architecture"
+    },
+    {
+      "id": "commit-9203c55",
+      "type": "commit",
+      "label": "9203c55",
+      "title": "feat: Implement comprehensive mood analysis system",
+      "timestamp": "2025-12-07T04:54:16Z",
+      "z": 1765083256.0,
+      "author": "mvrock",
+      "message": "feat: Implement comprehensive mood analysis system with detailed questions\n\n- Add mood detail questions screen with score-based branching\n  - 1-3 points (negative): 4 questions\n  - 4-6 points (neutral): 3 questions\n  - 7-10 points (positive): 3 questions\n- Implement category and score-based question types\n  - Category questions for pattern analysis (work, relationship, health, etc.)\n  - Score questions (1-4 scale) for severity measurement\n- Update Firestore schema to support detailed mood data\n  - Add detailedAnswers, detailScore, and categories fields\n  - Calculate average score from score-type questions\n- Enhance main screen mood tracking flow\n  - Add _isMoodSelected state tracking\n  - Enable button only after mood selection\n  - Navigate to detail questions screen\n- Improve UI/UX\n  - Radio button style selection with visual feedback\n  - Purple border (#8B5CF6) and check icon for selected items\n  - Mandatory answer validation\n  - Loading state during submission\n- Update FirestoreService.updateMoodScore() with optional parameters\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>"
+    },
+    {
+      "id": "commit-5312367",
+      "type": "commit",
+      "label": "5312367",
+      "title": "feat: Add health_service and update project depend",
+      "timestamp": "2025-12-10T05:45:40Z",
+      "z": 1765345540.0,
+      "author": "mvrock",
+      "message": "feat: Add health_service and update project dependencies"
+    },
+    {
+      "id": "commit-c80f83d",
+      "type": "commit",
+      "label": "c80f83d",
+      "title": "chore: Untrack google-services.json",
+      "timestamp": "2025-12-10T05:49:17Z",
+      "z": 1765345757.0,
+      "author": "mvrock",
+      "message": "chore: Untrack google-services.json"
+    },
+    {
+      "id": "file-.gitignore",
+      "type": "file",
+      "label": ".gitignore",
+      "title": ".gitignore",
+      "z": 0,
+      "path": ".gitignore",
+      "extension": "",
+      "additions": 1,
+      "deletions": 0
+    },
+    {
+      "id": "file-CLAUDE.md",
+      "type": "file",
+      "label": "CLAUDE.md",
+      "title": "CLAUDE.md",
+      "z": 0,
+      "path": "CLAUDE.md",
+      "extension": ".md",
+      "additions": 265,
+      "deletions": 0
+    },
+    {
+      "id": "file-README.md",
+      "type": "file",
+      "label": "README.md",
+      "title": "README.md",
+      "z": 0,
+      "path": "README.md",
+      "extension": ".md",
+      "additions": 76,
+      "deletions": 508
+    },
+    {
+      "id": "file-analysis_options.yaml",
+      "type": "file",
+      "label": "analysis_options.yaml",
+      "title": "analysis_options.yaml",
+      "z": 0,
+      "path": "analysis_options.yaml",
+      "extension": ".yaml",
+      "additions": 1,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/build.gradle.kts",
+      "type": "file",
+      "label": "build.gradle.kts",
+      "title": "android/app/build.gradle.kts",
+      "z": 0,
+      "path": "android/app/build.gradle.kts",
+      "extension": ".kts",
+      "additions": 29,
+      "deletions": 3
+    },
+    {
+      "id": "file-android/app/google-services.json",
+      "type": "file",
+      "label": "google-services.json",
+      "title": "android/app/google-services.json",
+      "z": 0,
+      "path": "android/app/google-services.json",
+      "extension": ".json",
+      "additions": 46,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/libs/samsung-health-data-api-1.0.0.aar",
+      "type": "file",
+      "label": "samsung-health-data-api-1.0.0.aar",
+      "title": "android/app/libs/samsung-health-data-api-1.0.0.aar",
+      "z": 0,
+      "path": "android/app/libs/samsung-health-data-api-1.0.0.aar",
+      "extension": ".aar",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/kotlin/com/example/untitled/MainActivity.kt",
+      "type": "file",
+      "label": "MainActivity.kt",
+      "title": "android/app/src/main/kotlin/com/example/untitled/MainActivity.kt",
+      "z": 0,
+      "path": "android/app/src/main/kotlin/com/example/untitled/MainActivity.kt",
+      "extension": ".kt",
+      "additions": 0,
+      "deletions": 5
+    },
+    {
+      "id": "file-android/app/src/main/kotlin/com/project/personaltherapy/MainActivity.kt",
+      "type": "file",
+      "label": "MainActivity.kt",
+      "title": "android/app/src/main/kotlin/com/project/personaltherapy/MainActivity.kt",
+      "z": 0,
+      "path": "android/app/src/main/kotlin/com/project/personaltherapy/MainActivity.kt",
+      "extension": ".kt",
+      "additions": 461,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/app/src/main/kotlin/com/project/personaltherapy/WearDataListenerService.kt",
+      "type": "file",
+      "label": "WearDataListenerService.kt",
+      "title": "android/app/src/main/kotlin/com/project/personaltherapy/WearDataListenerService.kt",
+      "z": 0,
+      "path": "android/app/src/main/kotlin/com/project/personaltherapy/WearDataListenerService.kt",
+      "extension": ".kt",
+      "additions": 71,
+      "deletions": 0
+    },
+    {
+      "id": "pr-12",
+      "type": "pull_request",
+      "label": "PR#12",
+      "title": " 개인정보 설정 재수정",
+      "timestamp": "2025-12-12T13:36:31Z",
+      "z": 1765546591.0,
+      "author": "uz030",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-12T15:11:24Z",
+      "head_branch": "profile",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-83ef883",
+      "type": "commit",
+      "label": "83ef883",
+      "title": " 개인정보 설정 재수정",
+      "timestamp": "2025-12-12T13:35:58Z",
+      "z": 1765546558.0,
+      "author": "yujin-seo-oss",
+      "message": " 개인정보 설정 재수정"
+    },
+    {
+      "id": "commit-f888901",
+      "type": "commit",
+      "label": "f888901",
+      "title": "프로필 재설정  재수정",
+      "timestamp": "2025-12-12T13:47:10Z",
+      "z": 1765547230.0,
+      "author": "yujin-seo-oss",
+      "message": "프로필 재설정  재수정"
+    },
+    {
+      "id": "file-lib/main.dart",
+      "type": "file",
+      "label": "main.dart",
+      "title": "lib/main.dart",
+      "z": 0,
+      "path": "lib/main.dart",
+      "extension": ".dart",
+      "additions": 12,
+      "deletions": 5
+    },
+    {
+      "id": "file-lib/personal_info_screen.dart",
+      "type": "file",
+      "label": "personal_info_screen.dart",
+      "title": "lib/personal_info_screen.dart",
+      "z": 0,
+      "path": "lib/personal_info_screen.dart",
+      "extension": ".dart",
+      "additions": 120,
+      "deletions": 15
+    },
+    {
+      "id": "file-pubspec.yaml",
+      "type": "file",
+      "label": "pubspec.yaml",
+      "title": "pubspec.yaml",
+      "z": 0,
+      "path": "pubspec.yaml",
+      "extension": ".yaml",
+      "additions": 3,
+      "deletions": 0
+    },
+    {
+      "id": "pr-11",
+      "type": "pull_request",
+      "label": "PR#11",
+      "title": "프로필 탭 수정",
+      "timestamp": "2025-12-12T10:03:50Z",
+      "z": 1765533830.0,
+      "author": "uz030",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-12T11:11:23Z",
+      "head_branch": "profile",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-9117e79",
+      "type": "commit",
+      "label": "9117e79",
+      "title": "프로필 탭 수정",
+      "timestamp": "2025-12-12T09:59:24Z",
+      "z": 1765533564.0,
+      "author": "yujin-seo-oss",
+      "message": "프로필 탭 수정"
+    },
+    {
+      "id": "commit-80c388c",
+      "type": "commit",
+      "label": "80c388c",
+      "title": "홈 컴포넌트 수정",
+      "timestamp": "2025-12-12T10:16:52Z",
+      "z": 1765534612.0,
+      "author": "yujin-seo-oss",
+      "message": "홈 컴포넌트 수정"
+    },
+    {
+      "id": "pr-10",
+      "type": "pull_request",
+      "label": "PR#10",
+      "title": "feat: Add Wear OS app for HRV measurement using Health Services API",
+      "timestamp": "2025-12-12T09:42:15Z",
+      "z": 1765532535.0,
+      "author": "Kimmovingrock",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-13T06:14:16Z",
+      "head_branch": "feature/wearable",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-bf13243",
+      "type": "commit",
+      "label": "bf13243",
+      "title": "feat: Add Wear OS app for HRV measurement using He",
+      "timestamp": "2025-12-12T09:40:03Z",
+      "z": 1765532403.0,
+      "author": "mvrock",
+      "message": "feat: Add Wear OS app for HRV measurement using Health Services API\n\n## Summary\n- Wear OS 앱 구현하여 Galaxy Watch에서 직접 HRV 측정\n- Health Services API 사용으로 고품질 IBI 데이터 수집\n- Data Layer API로 폰 앱과 실시간 데이터 통신\n- Flutter 앱에서 워치 HRV 데이터 수신 및 Firestore 저장\n\n## Added\n- `android/wear/` 모듈: Wear OS 앱 전체\n  - MainActivity: 권한 요청 및 서비스 시작\n  - HrvMonitorService: Health Services API로 HRV 측정 (5분 주기)\n  - SensorTestActivity: 사용 가능한 센서 확인\n- `WearDataListenerService`: 워치로부터 데이터 수신 (폰 앱)\n\n## Modified\n- `app/build.gradle.kts`: Wearable Data Layer 의존성 추가\n- `app/AndroidManifest.xml`: WearDataListenerService 등록\n- `MainActivity.kt`: 워치 데이터 조회 메서드 추가\n- `settings.gradle.kts`: wear 모듈 추가\n- `health_service.dart`: 워치 HRV 데이터 수신 메서드 추가\n\n## Technical Details\n- Health Services API로 HEART_RATE_BPM + IBI 데이터 수집\n- RMSSD 계산 알고리즘 구현\n- Wearable Data Layer API로 폰-워치 통신\n- 1분 측정, 4분 대기로 5분 주기 자동 측정\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "id": "commit-be6200f",
+      "type": "commit",
+      "label": "be6200f",
+      "title": "feat: Integrate Health Connect for HRV data manage",
+      "timestamp": "2025-12-12T13:26:54Z",
+      "z": 1765546014.0,
+      "author": "mvrock",
+      "message": "feat: Integrate Health Connect for HRV data management\n\nRefactor HRV data flow to use Health Connect as the central data store.\n\n- **WearDataListenerService:** Modified to directly save incoming HRV data from the watch to Health Connect.\n- **MainActivity:**\n  - Updated  to include  access for .\n  - Implemented  to read HRV data directly from Health Connect.\n  - Removed the  method channel handler as data is now accessed via Health Connect.\n\nThis change improves data integrity, security, and scalability by leveraging Health Connect as a robust storage solution."
+    },
+    {
+      "id": "commit-817a184",
+      "type": "commit",
+      "label": "817a184",
+      "title": "환경변수 설정",
+      "timestamp": "2025-12-12T17:56:40Z",
+      "z": 1765562200.0,
+      "author": "Jeong-dawon",
+      "message": "환경변수 설정"
+    },
+    {
+      "id": "commit-80a0d0c",
+      "type": "commit",
+      "label": "80a0d0c",
+      "title": "헬스 커넥트 연동 마무리",
+      "timestamp": "2025-12-13T05:30:43Z",
+      "z": 1765603843.0,
+      "author": "Jeong-dawon",
+      "message": "헬스 커넥트 연동 마무리"
+    },
+    {
+      "id": "commit-94712b6",
+      "type": "commit",
+      "label": "94712b6",
+      "title": "Merge branch 'develop' into feature/wearable",
+      "timestamp": "2025-12-13T06:14:07Z",
+      "z": 1765606447.0,
+      "author": "d_onw0",
+      "message": "Merge branch 'develop' into feature/wearable"
+    },
+    {
+      "id": "file-android/build.gradle.kts",
+      "type": "file",
+      "label": "build.gradle.kts",
+      "title": "android/build.gradle.kts",
+      "z": 0,
+      "path": "android/build.gradle.kts",
+      "extension": ".kts",
+      "additions": 16,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/settings.gradle.kts",
+      "type": "file",
+      "label": "settings.gradle.kts",
+      "title": "android/settings.gradle.kts",
+      "z": 0,
+      "path": "android/settings.gradle.kts",
+      "extension": ".kts",
+      "additions": 1,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/wear/build.gradle.kts",
+      "type": "file",
+      "label": "build.gradle.kts",
+      "title": "android/wear/build.gradle.kts",
+      "z": 0,
+      "path": "android/wear/build.gradle.kts",
+      "extension": ".kts",
+      "additions": 59,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/wear/src/main/AndroidManifest.xml",
+      "type": "file",
+      "label": "AndroidManifest.xml",
+      "title": "android/wear/src/main/AndroidManifest.xml",
+      "z": 0,
+      "path": "android/wear/src/main/AndroidManifest.xml",
+      "extension": ".xml",
+      "additions": 44,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/wear/src/main/java/com/project/personaltherapy/wear/HrvMonitorService.kt",
+      "type": "file",
+      "label": "HrvMonitorService.kt",
+      "title": "android/wear/src/main/java/com/project/personaltherapy/wear/HrvMonitorService.kt",
+      "z": 0,
+      "path": "android/wear/src/main/java/com/project/personaltherapy/wear/HrvMonitorService.kt",
+      "extension": ".kt",
+      "additions": 271,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/wear/src/main/java/com/project/personaltherapy/wear/MainActivity.kt",
+      "type": "file",
+      "label": "MainActivity.kt",
+      "title": "android/wear/src/main/java/com/project/personaltherapy/wear/MainActivity.kt",
+      "z": 0,
+      "path": "android/wear/src/main/java/com/project/personaltherapy/wear/MainActivity.kt",
+      "extension": ".kt",
+      "additions": 182,
+      "deletions": 0
+    },
+    {
+      "id": "file-android/wear/src/main/java/com/project/personaltherapy/wear/SensorTestActivity.kt",
+      "type": "file",
+      "label": "SensorTestActivity.kt",
+      "title": "android/wear/src/main/java/com/project/personaltherapy/wear/SensorTestActivity.kt",
+      "z": 0,
+      "path": "android/wear/src/main/java/com/project/personaltherapy/wear/SensorTestActivity.kt",
+      "extension": ".kt",
+      "additions": 67,
+      "deletions": 0
+    },
+    {
+      "id": "pr-9",
+      "type": "pull_request",
+      "label": "PR#9",
+      "title": "프로필 수정",
+      "timestamp": "2025-12-12T09:23:52Z",
+      "z": 1765531432.0,
+      "author": "uz030",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-12T09:39:45Z",
+      "head_branch": "profile",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-34fdeab",
+      "type": "commit",
+      "label": "34fdeab",
+      "title": "프로필 수정",
+      "timestamp": "2025-12-12T09:23:25Z",
+      "z": 1765531405.0,
+      "author": "yujin-seo-oss",
+      "message": "프로필 수정"
+    },
+    {
+      "id": "file-android/gradle.properties",
+      "type": "file",
+      "label": "gradle.properties",
+      "title": "android/gradle.properties",
+      "z": 0,
+      "path": "android/gradle.properties",
+      "extension": ".properties",
+      "additions": 1,
+      "deletions": 0
+    },
+    {
+      "id": "pr-8",
+      "type": "pull_request",
+      "label": "PR#8",
+      "title": "AIchat 점수 전송 구현",
+      "timestamp": "2025-12-12T09:10:06Z",
+      "z": 1765530606.0,
+      "author": "KMIN111",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-12T09:28:15Z",
+      "head_branch": "AIChat-ScoreCalc",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-cc00a7a",
+      "type": "commit",
+      "label": "cc00a7a",
+      "title": "AIchat 점수 전송 구현",
+      "timestamp": "2025-12-12T09:02:23Z",
+      "z": 1765530143.0,
+      "author": "정규민",
+      "message": "AIchat 점수 전송 구현"
+    },
+    {
+      "id": "pr-7",
+      "type": "pull_request",
+      "label": "PR#7",
+      "title": "feat: Health Connect에서 모든 건강 데이터 권한 요청 구현",
+      "timestamp": "2025-12-12T04:45:51Z",
+      "z": 1765514751.0,
+      "author": "w0ne23",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-12T04:46:00Z",
+      "head_branch": "feature/wearable",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-f126906",
+      "type": "commit",
+      "label": "f126906",
+      "title": "feat: Health Connect에서 모든 건강 데이터 권한 요청 구현",
+      "timestamp": "2025-12-12T04:41:26Z",
+      "z": 1765514486.0,
+      "author": "mvrock",
+      "message": "feat: Health Connect에서 모든 건강 데이터 권한 요청 구현\n\n- Health Connect 네이티브 권한 요청 메서드 추가\n- 20개 이상의 건강 데이터 타입 권한 지원 (심박수, HRV, 수면, 혈압 등)\n- AndroidManifest에 모든 Health Connect 권한 추가\n- 안정시 심박수 및 HRV 데이터 읽기 메서드 구현\n- minSdk를 29로 상향 조정\n- Samsung Health SDK AAR 파일 추가 (미사용)\n\n🎉 12/12 모든 권한 획득 성공\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "id": "pr-6",
+      "type": "pull_request",
+      "label": "PR#6",
+      "title": "Ai chat Parallel execution / Main screen slider score transmission",
+      "timestamp": "2025-12-11T20:10:31Z",
+      "z": 1765483831.0,
+      "author": "KMIN111",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-12-12T00:45:28Z",
+      "head_branch": "AIChat-ScoreClac",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-f0fc43e",
+      "type": "commit",
+      "label": "f0fc43e",
+      "title": "AIChat 기본 기능 추가",
+      "timestamp": "2025-12-11T18:22:44Z",
+      "z": 1765477364.0,
+      "author": "정규민",
+      "message": "AIChat 기본 기능 추가"
+    },
+    {
+      "id": "commit-2888eb5",
+      "type": "commit",
+      "label": "2888eb5",
+      "title": "1단계 감정 분석",
+      "timestamp": "2025-12-11T18:23:00Z",
+      "z": 1765477380.0,
+      "author": "정규민",
+      "message": "1단계 감정 분석"
+    },
+    {
+      "id": "commit-1b054dd",
+      "type": "commit",
+      "label": "1b054dd",
+      "title": "더 세세한 감정 분석 기능",
+      "timestamp": "2025-12-11T18:23:06Z",
+      "z": 1765477386.0,
+      "author": "정규민",
+      "message": "더 세세한 감정 분석 기능"
+    },
+    {
+      "id": "commit-d87c316",
+      "type": "commit",
+      "label": "d87c316",
+      "title": "점수 중간 저장",
+      "timestamp": "2025-12-11T18:23:06Z",
+      "z": 1765477386.0,
+      "author": "정규민",
+      "message": "점수 중간 저장"
+    },
+    {
+      "id": "commit-477fedf",
+      "type": "commit",
+      "label": "477fedf",
+      "title": "aichat 대화생성, 점수계산 병렬실행/메인화면 슬라이더 점수 변경 및 전송",
+      "timestamp": "2025-12-11T19:59:32Z",
+      "z": 1765483172.0,
+      "author": "정규민",
+      "message": "aichat 대화생성, 점수계산 병렬실행/메인화면 슬라이더 점수 변경 및 전송"
+    },
+    {
+      "id": "pr-5",
+      "type": "pull_request",
+      "label": "PR#5",
+      "title": "감정분석 기능 구현(측정/저장)",
+      "timestamp": "2025-12-03T03:03:10Z",
+      "z": 1764730990.0,
+      "author": "w0ne23",
+      "state": "CLOSED",
+      "merged": false,
+      "merged_at": null,
+      "head_branch": "feature/emotion-analysis",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-655a137",
+      "type": "commit",
+      "label": "655a137",
+      "title": "감정분석 기능 구현(측정/저장)",
+      "timestamp": "2025-12-03T02:56:06Z",
+      "z": 1764730566.0,
+      "author": "Jeong-dawon",
+      "message": "감정분석 기능 구현(측정/저장)"
+    },
+    {
+      "id": "file-lib/mood_detail_questions_screen.dart",
+      "type": "file",
+      "label": "mood_detail_questions_screen.dart",
+      "title": "lib/mood_detail_questions_screen.dart",
+      "z": 0,
+      "path": "lib/mood_detail_questions_screen.dart",
+      "extension": ".dart",
+      "additions": 502,
+      "deletions": 0
+    },
+    {
+      "id": "pr-4",
+      "type": "pull_request",
+      "label": "PR#4",
+      "title": "Ai chat basic feature",
+      "timestamp": "2025-12-02T01:13:16Z",
+      "z": 1764637996.0,
+      "author": "KMIN111",
+      "state": "CLOSED",
+      "merged": false,
+      "merged_at": null,
+      "head_branch": "AIChat",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-e39f435",
+      "type": "commit",
+      "label": "e39f435",
+      "title": "AIChat 기본 기능 추가",
+      "timestamp": "2025-12-02T01:07:55Z",
+      "z": 1764637675.0,
+      "author": "정규민",
+      "message": "AIChat 기본 기능 추가"
+    },
+    {
+      "id": "commit-486a4cc",
+      "type": "commit",
+      "label": "486a4cc",
+      "title": "Merge branch 'develop' into AIChat",
+      "timestamp": "2025-12-02T04:45:21Z",
+      "z": 1764650721.0,
+      "author": "Kimmovingrock",
+      "message": "Merge branch 'develop' into AIChat"
+    },
+    {
+      "id": "pr-3",
+      "type": "pull_request",
+      "label": "PR#3",
+      "title": "Develop",
+      "timestamp": "2025-11-10T15:19:14Z",
+      "z": 1762787954.0,
+      "author": "Kimmovingrock",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-11-10T15:19:40Z",
+      "head_branch": "develop",
+      "base_branch": "main"
+    },
+    {
+      "id": "commit-d7cfbaa",
+      "type": "commit",
+      "label": "d7cfbaa",
+      "title": "develop 브랜치 생성",
+      "timestamp": "2025-11-09T07:50:15Z",
+      "z": 1762674615.0,
+      "author": "Jeong-dawon",
+      "message": "develop 브랜치 생성"
+    },
+    {
+      "id": "commit-aa72603",
+      "type": "commit",
+      "label": "aa72603",
+      "title": "diagnosis page 구현",
+      "timestamp": "2025-11-09T09:11:37Z",
+      "z": 1762679497.0,
+      "author": "Jeong-dawon",
+      "message": "diagnosis page 구현"
+    },
+    {
+      "id": "commit-4c3ed62",
+      "type": "commit",
+      "label": "4c3ed62",
+      "title": "자가진단 점수에 따른 결과 분기",
+      "timestamp": "2025-11-09T09:40:54Z",
+      "z": 1762681254.0,
+      "author": "Jeong-dawon",
+      "message": "자가진단 점수에 따른 결과 분기"
+    },
+    {
+      "id": "commit-0f215f6",
+      "type": "commit",
+      "label": "0f215f6",
+      "title": "결과에 따른 진단 결과 색 구분",
+      "timestamp": "2025-11-09T09:55:48Z",
+      "z": 1762682148.0,
+      "author": "Jeong-dawon",
+      "message": "결과에 따른 진단 결과 색 구분"
+    },
+    {
+      "id": "commit-4dde786",
+      "type": "commit",
+      "label": "4dde786",
+      "title": "Merge pull request #2 from w0ne23/feat/diagnosis-p",
+      "timestamp": "2025-11-10T15:12:43Z",
+      "z": 1762787563.0,
+      "author": "Kimmovingrock",
+      "message": "Merge pull request #2 from w0ne23/feat/diagnosis-page\n\nFeat: diagnosis page"
+    },
+    {
+      "id": "file-ios/Flutter/Debug.xcconfig",
+      "type": "file",
+      "label": "Debug.xcconfig",
+      "title": "ios/Flutter/Debug.xcconfig",
+      "z": 0,
+      "path": "ios/Flutter/Debug.xcconfig",
+      "extension": ".xcconfig",
+      "additions": 1,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/Flutter/Release.xcconfig",
+      "type": "file",
+      "label": "Release.xcconfig",
+      "title": "ios/Flutter/Release.xcconfig",
+      "z": 0,
+      "path": "ios/Flutter/Release.xcconfig",
+      "extension": ".xcconfig",
+      "additions": 1,
+      "deletions": 0
+    },
+    {
+      "id": "file-ios/Podfile",
+      "type": "file",
+      "label": "Podfile",
+      "title": "ios/Podfile",
+      "z": 0,
+      "path": "ios/Podfile",
+      "extension": "",
+      "additions": 43,
+      "deletions": 0
+    },
+    {
+      "id": "file-lib/diagnosis_screen.dart",
+      "type": "file",
+      "label": "diagnosis_screen.dart",
+      "title": "lib/diagnosis_screen.dart",
+      "z": 0,
+      "path": "lib/diagnosis_screen.dart",
+      "extension": ".dart",
+      "additions": 549,
+      "deletions": 68
+    },
+    {
+      "id": "file-macos/Flutter/Flutter-Debug.xcconfig",
+      "type": "file",
+      "label": "Flutter-Debug.xcconfig",
+      "title": "macos/Flutter/Flutter-Debug.xcconfig",
+      "z": 0,
+      "path": "macos/Flutter/Flutter-Debug.xcconfig",
+      "extension": ".xcconfig",
+      "additions": 1,
+      "deletions": 0
+    },
+    {
+      "id": "file-macos/Flutter/Flutter-Release.xcconfig",
+      "type": "file",
+      "label": "Flutter-Release.xcconfig",
+      "title": "macos/Flutter/Flutter-Release.xcconfig",
+      "z": 0,
+      "path": "macos/Flutter/Flutter-Release.xcconfig",
+      "extension": ".xcconfig",
+      "additions": 1,
+      "deletions": 0
+    },
+    {
+      "id": "file-macos/Podfile",
+      "type": "file",
+      "label": "Podfile",
+      "title": "macos/Podfile",
+      "z": 0,
+      "path": "macos/Podfile",
+      "extension": "",
+      "additions": 42,
+      "deletions": 0
+    },
+    {
+      "id": "pr-2",
+      "type": "pull_request",
+      "label": "PR#2",
+      "title": "Feat: diagnosis page",
+      "timestamp": "2025-11-10T03:04:54Z",
+      "z": 1762743894.0,
+      "author": "w0ne23",
+      "state": "MERGED",
+      "merged": true,
+      "merged_at": "2025-11-10T15:12:43Z",
+      "head_branch": "feat/diagnosis-page",
+      "base_branch": "develop"
+    },
+    {
+      "id": "commit-6c8d527",
+      "type": "commit",
+      "label": "6c8d527",
+      "title": "Update README.md",
+      "timestamp": "2025-12-15T02:31:56Z",
+      "z": 1765765916.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Update README.md\n\n시연 영상 링크 추가\r\n워치 앱 설치 방법 추가",
+      "additions": 28,
+      "deletions": 2
+    },
+    {
+      "id": "commit-c1b56bf",
+      "type": "commit",
+      "label": "c1b56bf",
+      "title": "Merge pull request #17 from Personal-Therapy/devel",
+      "timestamp": "2025-12-15T01:44:18Z",
+      "z": 1765763058.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Merge pull request #17 from Personal-Therapy/develop\n\n최종",
+      "additions": 1764,
+      "deletions": 803
+    },
+    {
+      "id": "commit-7a000c6",
+      "type": "commit",
+      "label": "7a000c6",
+      "title": "Update README.md",
+      "timestamp": "2025-12-14T14:08:12Z",
+      "z": 1765721292.0,
+      "author": "KMIN111",
+      "author_email": "supermandly@naver.com",
+      "message": "Update README.md",
+      "additions": 63,
+      "deletions": 54
+    },
+    {
+      "id": "commit-e2c873f",
+      "type": "commit",
+      "label": "e2c873f",
+      "title": "Update README.md",
+      "timestamp": "2025-12-14T12:09:12Z",
+      "z": 1765714152.0,
+      "author": "Kimmovingrock",
+      "author_email": "116498744+Kimmovingrock@users.noreply.github.com",
+      "message": "Update README.md",
+      "additions": 117,
+      "deletions": 59
+    },
+    {
+      "id": "commit-3c009c0",
+      "type": "commit",
+      "label": "3c009c0",
+      "title": "인사이트 제거",
+      "timestamp": "2025-12-14T04:33:29Z",
+      "z": 1765686809.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "인사이트 제거",
+      "additions": 6,
+      "deletions": 6
+    },
+    {
+      "id": "commit-65749c6",
+      "type": "commit",
+      "label": "65749c6",
+      "title": "%합 100으로 맞추기",
+      "timestamp": "2025-12-14T04:25:53Z",
+      "z": 1765686353.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "%합 100으로 맞추기",
+      "additions": 14,
+      "deletions": 10
+    },
+    {
+      "id": "commit-d3ee020",
+      "type": "commit",
+      "label": "d3ee020",
+      "title": "Merge pull request #16 from Personal-Therapy/score",
+      "timestamp": "2025-12-14T04:05:04Z",
+      "z": 1765685104.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Merge pull request #16 from Personal-Therapy/score_branch\n\n점수 기반 알고리즘 반영",
+      "additions": 361,
+      "deletions": 97
+    },
+    {
+      "id": "commit-847cf30",
+      "type": "commit",
+      "label": "847cf30",
+      "title": "아이콘 크기 통일",
+      "timestamp": "2025-12-14T04:02:18Z",
+      "z": 1765684938.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "아이콘 크기 통일",
+      "additions": 51,
+      "deletions": 52
+    },
+    {
+      "id": "commit-dec9c59",
+      "type": "commit",
+      "label": "dec9c59",
+      "title": "생체리듬 로직 수정",
+      "timestamp": "2025-12-14T03:57:51Z",
+      "z": 1765684671.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "생체리듬 로직 수정",
+      "additions": 348,
+      "deletions": 92
+    },
+    {
+      "id": "commit-254c611",
+      "type": "commit",
+      "label": "254c611",
+      "title": "추적 탭 주간 변화 추이 반영",
+      "timestamp": "2025-12-14T03:25:50Z",
+      "z": 1765682750.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "추적 탭 주간 변화 추이 반영",
+      "additions": 47,
+      "deletions": 11
+    },
+    {
+      "id": "commit-43e4300",
+      "type": "commit",
+      "label": "43e4300",
+      "title": "Merge pull request #13 from Personal-Therapy/featu",
+      "timestamp": "2025-12-13T15:31:46Z",
+      "z": 1765639906.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Merge pull request #13 from Personal-Therapy/feature/app-branding\n\nFeature/app branding",
+      "additions": 18536,
+      "deletions": 1893
+    },
+    {
+      "id": "commit-891ca38",
+      "type": "commit",
+      "label": "891ca38",
+      "title": "레이아웃 변경",
+      "timestamp": "2025-12-13T13:21:44Z",
+      "z": 1765632104.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "레이아웃 변경",
+      "additions": 104,
+      "deletions": 52
+    },
+    {
+      "id": "commit-85501d2",
+      "type": "commit",
+      "label": "85501d2",
+      "title": "점수 저장 로직 구현",
+      "timestamp": "2025-12-13T10:40:03Z",
+      "z": 1765622403.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "점수 저장 로직 구현",
+      "additions": 764,
+      "deletions": 502
+    },
+    {
+      "id": "commit-b84eed8",
+      "type": "commit",
+      "label": "b84eed8",
+      "title": "version",
+      "timestamp": "2025-12-13T07:37:05Z",
+      "z": 1765611425.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "version",
+      "additions": 5,
+      "deletions": 5
+    },
+    {
+      "id": "commit-1e90aea",
+      "type": "commit",
+      "label": "1e90aea",
+      "title": "Merge branch 'develop' of https://github.com/Perso",
+      "timestamp": "2025-12-13T06:27:38Z",
+      "z": 1765607258.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "Merge branch 'develop' of https://github.com/Personal-Therapy/pt-flutter into develop",
+      "additions": 1562,
+      "deletions": 20
+    },
+    {
+      "id": "commit-fcae720",
+      "type": "commit",
+      "label": "fcae720",
+      "title": "Merge pull request #10 from Personal-Therapy/featu",
+      "timestamp": "2025-12-13T06:14:16Z",
+      "z": 1765606456.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Merge pull request #10 from Personal-Therapy/feature/wearable\n\nfeat: Add Wear OS app for HRV measurement using Health Services API",
+      "additions": 1562,
+      "deletions": 20
+    },
+    {
+      "id": "commit-4892c0d",
+      "type": "commit",
+      "label": "4892c0d",
+      "title": "파일경로 제거",
+      "timestamp": "2025-12-12T15:13:27Z",
+      "z": 1765552407.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "파일경로 제거",
+      "additions": 1,
+      "deletions": 1
+    },
+    {
+      "id": "commit-da84393",
+      "type": "commit",
+      "label": "da84393",
+      "title": "Merge pull request #12 from Personal-Therapy/profi",
+      "timestamp": "2025-12-12T15:11:23Z",
+      "z": 1765552283.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Merge pull request #12 from Personal-Therapy/profile\n\n 개인정보 설정 재수정",
+      "additions": 140,
+      "deletions": 20
+    },
+    {
+      "id": "commit-30519f7",
+      "type": "commit",
+      "label": "30519f7",
+      "title": "Merge pull request #11 from Personal-Therapy/profi",
+      "timestamp": "2025-12-12T11:11:23Z",
+      "z": 1765537883.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Merge pull request #11 from Personal-Therapy/profile\n\n프로필 탭 수정",
+      "additions": 53,
+      "deletions": 38
+    },
+    {
+      "id": "commit-6449df7",
+      "type": "commit",
+      "label": "6449df7",
+      "title": "Merge pull request #9 from Personal-Therapy/profil",
+      "timestamp": "2025-12-12T09:39:45Z",
+      "z": 1765532385.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Merge pull request #9 from Personal-Therapy/profile\n\n프로필 수정",
+      "additions": 270,
+      "deletions": 395
+    },
+    {
+      "id": "commit-b49755d",
+      "type": "commit",
+      "label": "b49755d",
+      "title": "Merge pull request #8 from KMIN111/AIChat-ScoreCal",
+      "timestamp": "2025-12-12T09:28:15Z",
+      "z": 1765531695.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Merge pull request #8 from KMIN111/AIChat-ScoreCalc\n\nAIchat 점수 전송 구현",
+      "additions": 14,
+      "deletions": 8
+    },
+    {
+      "id": "commit-15f0fe5",
+      "type": "commit",
+      "label": "15f0fe5",
+      "title": "main_screen revise",
+      "timestamp": "2025-12-12T04:51:35Z",
+      "z": 1765515095.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "main_screen revise",
+      "additions": 126,
+      "deletions": 132
+    },
+    {
+      "id": "commit-cdf30a2",
+      "type": "commit",
+      "label": "cdf30a2",
+      "title": "Merge pull request #7 from Personal-Therapy/featur",
+      "timestamp": "2025-12-12T04:46:00Z",
+      "z": 1765514760.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Merge pull request #7 from Personal-Therapy/feature/wearable\n\nfeat: Health Connect에서 모든 건강 데이터 권한 요청 구현",
+      "additions": 800,
+      "deletions": 28
+    },
+    {
+      "id": "commit-4f5d946",
+      "type": "commit",
+      "label": "4f5d946",
+      "title": "google로그인 프로필페이지 연동",
+      "timestamp": "2025-12-12T01:15:37Z",
+      "z": 1765502137.0,
+      "author": "Jeong-dawon",
+      "author_email": "dy030819@naver.com",
+      "message": "google로그인 프로필페이지 연동",
+      "additions": 352,
+      "deletions": 28
+    },
+    {
+      "id": "commit-0ca1f52",
+      "type": "commit",
+      "label": "0ca1f52",
+      "title": "Merge pull request #6 from KMIN111/AIChat-ScoreCla",
+      "timestamp": "2025-12-12T00:45:27Z",
+      "z": 1765500327.0,
+      "author": "d_onw0",
+      "author_email": "150269215+w0ne23@users.noreply.github.com",
+      "message": "Merge pull request #6 from KMIN111/AIChat-ScoreClac\n\nAi chat Parallel execution / Main screen slider score transmission",
+      "additions": 352,
+      "deletions": 179
+    },
+    {
+      "id": "commit-848f237",
+      "type": "commit",
+      "label": "848f237",
+      "title": "Delete .env",
+      "timestamp": "2025-12-11T15:50:57Z",
+      "z": 1765468257.0,
+      "author": "Kimmovingrock",
+      "author_email": "116498744+Kimmovingrock@users.noreply.github.com",
+      "message": "Delete .env",
+      "additions": 0,
+      "deletions": 2
+    },
+    {
+      "id": "commit-3bd8e15",
+      "type": "commit",
+      "label": "3bd8e15",
+      "title": "feat: 하단 '상담' 탭에 AI 채팅 화면 연결",
+      "timestamp": "2025-12-11T15:47:00Z",
+      "z": 1765468020.0,
+      "author": "mvrock",
+      "author_email": "080a363@gmail.com",
+      "message": "feat: 하단 '상담' 탭에 AI 채팅 화면 연결\n\n- lib/main_screen.dart: '상담' 탭의 Placeholder를 AIChatScreen()으로 교체하고 관련 임시 코드를 삭제했습니다.\n\nrefactor: 안드로이드 패키지 이름을 com.project.personaltherapy로 변경\n\n- android/app/build.gradle.kts: applicationId와 namespace를 수정했습니다.\n- android/app/src/main/AndroidManifest.xml: package 속성을 제거했습니다.\n- android/app/src/main/kotlin/: MainActivity의 디렉토리 구조를 새 패키지 이름에 맞게 변경했습니다.\n- android/app/google-services.json: 새 패키지 이름에 맞는 설정 파일을 추가했습니다.\n\nfix: 회원가입 화면 이미지 로딩 오류 수정\n\n- lib/signup_screen.dart: 구글 로그인 버튼의 이미지에 errorBuilder를 추가하여 이미지 로딩 실패 시 앱이 비정상 종료되는 현상을 방지했습니다.\n\nfix: 프로필 탭에서 비동기 데이터 로딩 시 발생하는 오류 수정\n\n- lib/profile_tab.dart: 걸음 수 데이터를 비동기적으로 가져온 후, 위젯이 화면에 없을 때 setState를 호출하여 발생하던 오류를 'mounted' 확인을 통해 수정했습니다.",
+      "additions": 1008,
+      "deletions": 160
+    },
+    {
+      "id": "commit-d4848bb",
+      "type": "commit",
+      "label": "d4848bb",
+      "title": "Merge branch 'develop' of https://github.com/Perso",
+      "timestamp": "2025-12-10T06:25:06Z",
+      "z": 1765347906.0,
+      "author": "yujin-seo-oss",
+      "author_email": "sseo08267@hansung.ac.kr",
+      "message": "Merge branch 'develop' of https://github.com/Personal-Therapy/pt-flutter into develop",
+      "additions": 11003,
+      "deletions": 1006
+    },
+    {
+      "id": "commit-a291dff",
+      "type": "commit",
+      "label": "a291dff",
+      "title": "알고리즘 수정",
+      "timestamp": "2025-12-10T06:24:59Z",
+      "z": 1765347899.0,
+      "author": "yujin-seo-oss",
+      "author_email": "sseo08267@hansung.ac.kr",
+      "message": "알고리즘 수정",
+      "additions": 781,
+      "deletions": 5
+    },
+    {
+      "id": "commit-f784039",
+      "type": "commit",
+      "label": "f784039",
+      "title": "개인정보 수정 페이지 생성 및 연결",
+      "timestamp": "2025-11-10T02:47:16Z",
+      "z": 1762742836.0,
+      "author": "mvrock",
+      "author_email": "080a363@gmail.com",
+      "message": "개인정보 수정 페이지 생성 및 연결",
+      "additions": 508,
+      "deletions": 52
+    },
+    {
+      "id": "commit-271cd15",
+      "type": "commit",
+      "label": "271cd15",
+      "title": "diagnosis_screen",
+      "timestamp": "2025-11-09T07:29:32Z",
+      "z": 1762673372.0,
+      "author": "mvrock",
+      "author_email": "080a363@gmail.com",
+      "message": "diagnosis_screen",
+      "additions": 361,
+      "deletions": 10
+    },
+    {
+      "id": "commit-93bc13c",
+      "type": "commit",
+      "label": "93bc13c",
+      "title": "Personal therapy",
+      "timestamp": "2025-11-09T01:29:13Z",
+      "z": 1762651753.0,
+      "author": "mvrock",
+      "author_email": "080a363@gmail.com",
+      "message": "Personal therapy",
+      "additions": 8316,
+      "deletions": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": "user-w0ne23",
+      "target": "issue-1",
+      "type": "created"
+    },
+    {
+      "source": "user-w0ne23",
+      "target": "pr-17",
+      "type": "created"
+    },
+    {
+      "source": "pr-17",
+      "target": "commit-c3f3e82",
+      "type": "contains"
+    },
+    {
+      "source": "pr-17",
+      "target": "commit-4f75335",
+      "type": "contains"
+    },
+    {
+      "source": "pr-17",
+      "target": "commit-d67ce49",
+      "type": "contains"
+    },
+    {
+      "source": "pr-17",
+      "target": "commit-f50d6c7",
+      "type": "contains"
+    },
+    {
+      "source": "pr-17",
+      "target": "commit-82f3f99",
+      "type": "contains"
+    },
+    {
+      "source": "pr-17",
+      "target": "commit-8edaa5b",
+      "type": "contains"
+    },
+    {
+      "source": "pr-17",
+      "target": "commit-0550627",
+      "type": "contains"
+    },
+    {
+      "source": "pr-17",
+      "target": "commit-7b6fae8",
+      "type": "contains"
+    },
+    {
+      "source": "pr-17",
+      "target": "commit-85c9a58",
+      "type": "contains"
+    },
+    {
+      "source": "pr-17",
+      "target": "commit-5b104dc",
+      "type": "contains"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-android/app/src/main/AndroidManifest.xml",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-android/build/reports/problems/problems-report.html",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-lib/aichat_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-lib/emotion_tracking_tab.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-lib/healing_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-lib/health_result_page.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-lib/main_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-lib/profile_tab.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-lib/services/firestore_service.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-lib/services/healing_recommendation_service.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-lib/services/health_service.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-lib/wearable_device_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-17",
+      "target": "file-pubspec.lock",
+      "type": "modifies"
+    },
+    {
+      "source": "user-uz030",
+      "target": "pr-16",
+      "type": "created"
+    },
+    {
+      "source": "pr-16",
+      "target": "commit-82f3f99",
+      "type": "contains"
+    },
+    {
+      "source": "pr-16",
+      "target": "commit-8edaa5b",
+      "type": "contains"
+    },
+    {
+      "source": "pr-16",
+      "target": "commit-0550627",
+      "type": "contains"
+    },
+    {
+      "source": "pr-16",
+      "target": "commit-7b6fae8",
+      "type": "contains"
+    },
+    {
+      "source": "pr-16",
+      "target": "commit-9d2947e",
+      "type": "contains"
+    },
+    {
+      "source": "pr-16",
+      "target": "file-lib/healing_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-16",
+      "target": "file-lib/main_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-16",
+      "target": "file-lib/services/firestore_service.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-16",
+      "target": "file-lib/services/healing_recommendation_service.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "user-KMIN111",
+      "target": "pr-15",
+      "type": "created"
+    },
+    {
+      "source": "pr-15",
+      "target": "commit-045b315",
+      "type": "contains"
+    },
+    {
+      "source": "pr-15",
+      "target": "commit-7d52b07",
+      "type": "contains"
+    },
+    {
+      "source": "pr-15",
+      "target": "commit-d179706",
+      "type": "contains"
+    },
+    {
+      "source": "pr-15",
+      "target": "commit-93640bb",
+      "type": "contains"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/01d1aa117251c355f85058d78eaa7ad9",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/01f61f66cd6b4cd276fede67f35a3065",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0245645c246cff6b63c0318c1e79eff5",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/026e883e085bb94173ce6a1bec423ee8",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/02c368b892cf9fdaf016af90dc6d7e8a",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0336df27faefe57299e02dd2e906c25e",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/03b45a1f4d94c3ec032c7dec7b8e16a3",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/04243bb57083504b3132ecc39060ea0e",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/044a6fdfc02bdd648746cfaa9bf526af",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/051d8eead2e1c272c997dfa63543a877",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/06c8f1d21708796f2b276f6248905a9d",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0c2c7ab89954ec86f32cc86e93b49dfe",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0c67f7fea4315701f41d6765de2efd25",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/0ce4bf29189fff5412cea7aa06d742e1",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/1255916a12232c241a90570758ec1b20",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/15b4083e71a3d57975ea9ea67ac4b4e1",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/1629caef7b4848720a09c57ae123be12",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/16d87c28a3ee45aaa892bcc40749b11f",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/172533f8de6b63ed0b25ae218b799c05",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-15",
+      "target": "file-ios/build/XCBuildData/c9586efa734e46c3eb2ab1c4263854d1.xcbuilddata/attachments/177119fae201e6bee34a3ffe6e4f9fc6",
+      "type": "modifies"
+    },
+    {
+      "source": "user-Kimmovingrock",
+      "target": "pr-14",
+      "type": "created"
+    },
+    {
+      "source": "pr-14",
+      "target": "commit-f3bf0f3",
+      "type": "contains"
+    },
+    {
+      "source": "pr-14",
+      "target": "commit-82186f4",
+      "type": "contains"
+    },
+    {
+      "source": "pr-14",
+      "target": "commit-2a4a4ea",
+      "type": "contains"
+    },
+    {
+      "source": "pr-14",
+      "target": "commit-d25c0ad",
+      "type": "contains"
+    },
+    {
+      "source": "pr-14",
+      "target": "commit-3a751e8",
+      "type": "contains"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/AndroidManifest.xml",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/drawable-hdpi/ic_launcher_foreground.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/drawable-mdpi/ic_launcher_foreground.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/drawable-xhdpi/ic_launcher_foreground.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/drawable-xxhdpi/ic_launcher_foreground.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/drawable-xxxhdpi/ic_launcher_foreground.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-android/app/src/main/res/values/colors.xml",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-assets/images/app_icon.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-assets/images/app_icon_adaptive.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-ios/Runner.xcodeproj/project.pbxproj",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-14",
+      "target": "file-ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+      "type": "modifies"
+    },
+    {
+      "source": "user-Kimmovingrock",
+      "target": "pr-13",
+      "type": "created"
+    },
+    {
+      "source": "pr-13",
+      "target": "commit-30c0ba3",
+      "type": "contains"
+    },
+    {
+      "source": "pr-13",
+      "target": "commit-fce3938",
+      "type": "contains"
+    },
+    {
+      "source": "pr-13",
+      "target": "commit-ac09784",
+      "type": "contains"
+    },
+    {
+      "source": "pr-13",
+      "target": "commit-1aad6f1",
+      "type": "contains"
+    },
+    {
+      "source": "pr-13",
+      "target": "commit-c2cf025",
+      "type": "contains"
+    },
+    {
+      "source": "pr-13",
+      "target": "commit-5dcf05b",
+      "type": "contains"
+    },
+    {
+      "source": "pr-13",
+      "target": "commit-9462d9a",
+      "type": "contains"
+    },
+    {
+      "source": "pr-13",
+      "target": "commit-9203c55",
+      "type": "contains"
+    },
+    {
+      "source": "pr-13",
+      "target": "commit-5312367",
+      "type": "contains"
+    },
+    {
+      "source": "pr-13",
+      "target": "commit-c80f83d",
+      "type": "contains"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-.gitignore",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-CLAUDE.md",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-README.md",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-analysis_options.yaml",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/build.gradle.kts",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/google-services.json",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/libs/samsung-health-data-api-1.0.0.aar",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/AndroidManifest.xml",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/kotlin/com/example/untitled/MainActivity.kt",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/kotlin/com/project/personaltherapy/MainActivity.kt",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/kotlin/com/project/personaltherapy/WearDataListenerService.kt",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/res/drawable-hdpi/ic_launcher_foreground.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/res/drawable-mdpi/ic_launcher_foreground.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/res/drawable-xhdpi/ic_launcher_foreground.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/res/drawable-xxhdpi/ic_launcher_foreground.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/res/drawable-xxxhdpi/ic_launcher_foreground.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-13",
+      "target": "file-android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "type": "modifies"
+    },
+    {
+      "source": "user-uz030",
+      "target": "pr-12",
+      "type": "created"
+    },
+    {
+      "source": "pr-12",
+      "target": "commit-83ef883",
+      "type": "contains"
+    },
+    {
+      "source": "pr-12",
+      "target": "commit-f888901",
+      "type": "contains"
+    },
+    {
+      "source": "pr-12",
+      "target": "file-lib/main.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-12",
+      "target": "file-lib/personal_info_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-12",
+      "target": "file-pubspec.lock",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-12",
+      "target": "file-pubspec.yaml",
+      "type": "modifies"
+    },
+    {
+      "source": "user-uz030",
+      "target": "pr-11",
+      "type": "created"
+    },
+    {
+      "source": "pr-11",
+      "target": "commit-9117e79",
+      "type": "contains"
+    },
+    {
+      "source": "pr-11",
+      "target": "commit-80c388c",
+      "type": "contains"
+    },
+    {
+      "source": "pr-11",
+      "target": "file-lib/main_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-11",
+      "target": "file-lib/profile_tab.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "user-Kimmovingrock",
+      "target": "pr-10",
+      "type": "created"
+    },
+    {
+      "source": "pr-10",
+      "target": "commit-bf13243",
+      "type": "contains"
+    },
+    {
+      "source": "pr-10",
+      "target": "commit-be6200f",
+      "type": "contains"
+    },
+    {
+      "source": "pr-10",
+      "target": "commit-817a184",
+      "type": "contains"
+    },
+    {
+      "source": "pr-10",
+      "target": "commit-80a0d0c",
+      "type": "contains"
+    },
+    {
+      "source": "pr-10",
+      "target": "commit-94712b6",
+      "type": "contains"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/app/build.gradle.kts",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/app/src/main/AndroidManifest.xml",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/app/src/main/kotlin/com/project/personaltherapy/MainActivity.kt",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/app/src/main/kotlin/com/project/personaltherapy/WearDataListenerService.kt",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/build.gradle.kts",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/build/reports/problems/problems-report.html",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/settings.gradle.kts",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/wear/build.gradle.kts",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/wear/src/main/AndroidManifest.xml",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/wear/src/main/java/com/project/personaltherapy/wear/HrvMonitorService.kt",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/wear/src/main/java/com/project/personaltherapy/wear/MainActivity.kt",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-android/wear/src/main/java/com/project/personaltherapy/wear/SensorTestActivity.kt",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-lib/services/health_service.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-lib/wearable_device_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-pubspec.lock",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-10",
+      "target": "file-pubspec.yaml",
+      "type": "modifies"
+    },
+    {
+      "source": "user-uz030",
+      "target": "pr-9",
+      "type": "created"
+    },
+    {
+      "source": "pr-9",
+      "target": "commit-34fdeab",
+      "type": "contains"
+    },
+    {
+      "source": "pr-9",
+      "target": "file-android/gradle.properties",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-9",
+      "target": "file-lib/personal_info_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-9",
+      "target": "file-lib/profile_tab.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-9",
+      "target": "file-lib/services/healing_recommendation_service.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "user-KMIN111",
+      "target": "pr-8",
+      "type": "created"
+    },
+    {
+      "source": "pr-8",
+      "target": "commit-cc00a7a",
+      "type": "contains"
+    },
+    {
+      "source": "pr-8",
+      "target": "file-lib/aichat_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "user-w0ne23",
+      "target": "pr-7",
+      "type": "created"
+    },
+    {
+      "source": "pr-7",
+      "target": "commit-f126906",
+      "type": "contains"
+    },
+    {
+      "source": "pr-7",
+      "target": "file-android/app/build.gradle.kts",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-7",
+      "target": "file-android/app/libs/samsung-health-data-api-1.0.0.aar",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-7",
+      "target": "file-android/app/src/main/AndroidManifest.xml",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-7",
+      "target": "file-android/app/src/main/kotlin/com/project/personaltherapy/MainActivity.kt",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-7",
+      "target": "file-android/gradle.properties",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-7",
+      "target": "file-lib/services/health_service.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-7",
+      "target": "file-lib/wearable_device_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "user-KMIN111",
+      "target": "pr-6",
+      "type": "created"
+    },
+    {
+      "source": "pr-6",
+      "target": "commit-f0fc43e",
+      "type": "contains"
+    },
+    {
+      "source": "pr-6",
+      "target": "commit-2888eb5",
+      "type": "contains"
+    },
+    {
+      "source": "pr-6",
+      "target": "commit-1b054dd",
+      "type": "contains"
+    },
+    {
+      "source": "pr-6",
+      "target": "commit-d87c316",
+      "type": "contains"
+    },
+    {
+      "source": "pr-6",
+      "target": "commit-477fedf",
+      "type": "contains"
+    },
+    {
+      "source": "pr-6",
+      "target": "file-lib/aichat_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-6",
+      "target": "file-lib/main_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-6",
+      "target": "file-pubspec.lock",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-6",
+      "target": "file-pubspec.yaml",
+      "type": "modifies"
+    },
+    {
+      "source": "user-w0ne23",
+      "target": "pr-5",
+      "type": "created"
+    },
+    {
+      "source": "pr-5",
+      "target": "commit-655a137",
+      "type": "contains"
+    },
+    {
+      "source": "pr-5",
+      "target": "file-lib/main_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-5",
+      "target": "file-lib/mood_detail_questions_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-5",
+      "target": "file-lib/services/firestore_service.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-5",
+      "target": "file-pubspec.lock",
+      "type": "modifies"
+    },
+    {
+      "source": "user-KMIN111",
+      "target": "pr-4",
+      "type": "created"
+    },
+    {
+      "source": "pr-4",
+      "target": "commit-f3bf0f3",
+      "type": "contains"
+    },
+    {
+      "source": "pr-4",
+      "target": "commit-e39f435",
+      "type": "contains"
+    },
+    {
+      "source": "pr-4",
+      "target": "commit-486a4cc",
+      "type": "contains"
+    },
+    {
+      "source": "pr-4",
+      "target": "file-lib/aichat_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-4",
+      "target": "file-lib/main_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-4",
+      "target": "file-lib/profile_tab.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-4",
+      "target": "file-pubspec.lock",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-4",
+      "target": "file-pubspec.yaml",
+      "type": "modifies"
+    },
+    {
+      "source": "user-Kimmovingrock",
+      "target": "pr-3",
+      "type": "created"
+    },
+    {
+      "source": "pr-3",
+      "target": "commit-d7cfbaa",
+      "type": "contains"
+    },
+    {
+      "source": "pr-3",
+      "target": "commit-aa72603",
+      "type": "contains"
+    },
+    {
+      "source": "pr-3",
+      "target": "commit-4c3ed62",
+      "type": "contains"
+    },
+    {
+      "source": "pr-3",
+      "target": "commit-0f215f6",
+      "type": "contains"
+    },
+    {
+      "source": "pr-3",
+      "target": "commit-4dde786",
+      "type": "contains"
+    },
+    {
+      "source": "pr-3",
+      "target": "file-ios/Flutter/Debug.xcconfig",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-3",
+      "target": "file-ios/Flutter/Release.xcconfig",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-3",
+      "target": "file-ios/Podfile",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-3",
+      "target": "file-lib/diagnosis_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-3",
+      "target": "file-macos/Flutter/Flutter-Debug.xcconfig",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-3",
+      "target": "file-macos/Flutter/Flutter-Release.xcconfig",
+      "type": "modifies"
+    },
+    {
+      "source": "pr-3",
+      "target": "file-macos/Podfile",
+      "type": "modifies"
+    },
+    {
+      "source": "user-w0ne23",
+      "target": "pr-2",
+      "type": "created"
+    },
+    {
+      "source": "pr-2",
+      "target": "commit-4c3ed62",
+      "type": "contains"
+    },
+    {
+      "source": "pr-2",
+      "target": "commit-0f215f6",
+      "type": "contains"
+    },
+    {
+      "source": "pr-2",
+      "target": "file-lib/diagnosis_screen.dart",
+      "type": "modifies"
+    },
+    {
+      "source": "commit-6c8d527",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-c1b56bf",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-7a000c6",
+      "target": "user-KMIN111",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-e2c873f",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-3c009c0",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-65749c6",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-d3ee020",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-9d2947e",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-847cf30",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-dec9c59",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-254c611",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-5b104dc",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-85c9a58",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-7b6fae8",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-0550627",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-8edaa5b",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-82f3f99",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-f50d6c7",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-d67ce49",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-43e4300",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-3a751e8",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-4f75335",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-d25c0ad",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-c3f3e82",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-891ca38",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-85501d2",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-b84eed8",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-2a4a4ea",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-1e90aea",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-fcae720",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-94712b6",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-80a0d0c",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-817a184",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-4892c0d",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-da84393",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-f888901",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-83ef883",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-be6200f",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-30519f7",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-80c388c",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-9117e79",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-bf13243",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-6449df7",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-b49755d",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-34fdeab",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-15f0fe5",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-cdf30a2",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-f126906",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-4f5d946",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-0ca1f52",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-848f237",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-3bd8e15",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-d4848bb",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-a291dff",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-c80f83d",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-5312367",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-9203c55",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-9462d9a",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-5dcf05b",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-c2cf025",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-1aad6f1",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-ac09784",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-82186f4",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-f3bf0f3",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-fce3938",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-4dde786",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-30c0ba3",
+      "target": "user-uz030",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-f784039",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-0f215f6",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-4c3ed62",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-aa72603",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-d7cfbaa",
+      "target": "user-w0ne23",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-271cd15",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    },
+    {
+      "source": "commit-93bc13c",
+      "target": "user-Kimmovingrock",
+      "type": "authored_by"
+    }
+  ],
+  "metadata": {
+    "repository": {
+      "name": "pt-flutter",
+      "full_name": "Personal-Therapy/pt-flutter",
+      "description": "using flutter",
+      "url": "https://github.com/Personal-Therapy/pt-flutter",
+      "stars": 0,
+      "forks": 3,
+      "language": "Dart"
+    },
+    "stats": {
+      "total_nodes": 189,
+      "total_edges": 285,
+      "contributors": 4,
+      "issues": 1,
+      "pull_requests": 16,
+      "commits": 87,
+      "files": 81
+    },
+    "crawled_at": "2026-01-10T22:58:10.470265",
+    "pagination": "full"
+  }
+}

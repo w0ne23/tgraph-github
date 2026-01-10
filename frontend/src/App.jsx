@@ -14,7 +14,7 @@ export default function App() {
   const [showDashboard, setShowDashboard] = useState(false);  // ✨ 대시보드 모달 상태
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/demo')
+    fetch('http://localhost:8000/api/load-json')
       .then(res => res.json())
       .then(data => {
         const zValues = data.nodes.map(n => n.z);
