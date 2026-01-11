@@ -74,6 +74,48 @@ class GitHubGraphQLCrawlerTGraph:
         except:
             return 0.0
     
+    def _get_file_content(self, owner: str, repo: str, file_path: str, branch: str = "main") -> str:
+        """파일 내용 가져오기"""
+        query = """
+        query($owner: String!, $repo: String!, $expression: String!) {
+          repository(owner: $owner, name: $repo) {
+            object(expression: $expression) {
+              ... on Blob {
+                text
+                byteSize
+                isBinary
+              }
+            }
+          }
+        }
+        """
+        
+        expression = f"{branch}:{file_path}"
+        
+        try:
+            data = self._execute_query(query, {
+                "owner": owner,
+                "repo": repo,
+                "expression": expression
+            })
+            
+            obj = data.get("repository", {}).get("object", {})
+            
+            # 바이너리 파일은 스킵 (이미지, 실행파일 등)
+            if obj.get("isBinary", False):
+                return ""
+            
+            # 너무 큰 파일은 스킵 (1MB 제한)
+            if obj.get("byteSize", 0) > 1000000:
+                print(f"      ⚠️  {file_path}: 너무 큼 ({obj.get('byteSize', 0)} bytes)")
+                return ""
+            
+            return obj.get("text", "")
+        
+        except Exception as e:
+            # 파일을 가져올 수 없으면 빈 문자열 반환
+            return ""
+    
     def _paginate_issues(self, owner: str, repo: str) -> List[Dict]:
         """이슈 전체 수집 (페이지네이션)"""
         print("\n📋 이슈 전체 수집 중 (페이지네이션)...")
@@ -493,7 +535,7 @@ class GitHubGraphQLCrawlerTGraph:
                 })
             
             # PR의 파일들 처리
-            for file_node in pr.get('files', {}).get('nodes', [])[:20]:  # PR당 최대 20개 파일
+            for file_node in pr.get('files', {}).get('nodes', []):  # ✨ 제한 없음! 전체 파일
                 file_path = file_node.get('path', '')
                 file_id = f"file-{file_path}"
                 
@@ -502,14 +544,26 @@ class GitHubGraphQLCrawlerTGraph:
                     
                     extension = Path(file_path).suffix
                     
+                    # ✨ 모든 텍스트 파일의 내용 가져오기 (개수 제한 없음)
+                    content = ""
+                    if extension in ['.py', '.js', '.jsx', '.ts', '.tsx', '.java', '.cpp', '.c', '.go', '.rs', '.rb', 
+                                    '.dart', '.swift', '.kt', '.scala', '.php', '.html', '.css', '.scss', '.vue', 
+                                    '.md', '.txt', '.json', '.yaml', '.yml', '.xml', '.sql', '.sh', '.bash']:
+                        content = self._get_file_content(owner, repo, file_path)
+                        if content:
+                            print(f"      📄 {Path(file_path).name}: {len(content)} 자")
+                    
                     nodes.append({
                         "id": file_id,
                         "type": "file",
                         "label": Path(file_path).name,
                         "title": file_path,
-                        "z": 0,
+                        "timestamp": pr['createdAt'],
+                        "z": self._parse_timestamp(pr['createdAt']),
                         "path": file_path,
                         "extension": extension,
+                        "content": content,
+                        "lines": content.count('\n') + 1 if content else 0,
                         "additions": file_node.get('additions', 0),
                         "deletions": file_node.get('deletions', 0)
                     })

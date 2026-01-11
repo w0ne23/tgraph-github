@@ -19,6 +19,15 @@ const DOMAIN_COLORS = {
   uncategorized: '#95A5A6'
 };
 
+// ✨ 노드 타입별 이모지
+const NODE_ICONS = {
+  issue: '🚨',
+  pull_request: '🔀',
+  commit: '💬',
+  contributor: '👤',
+  file: '📄'
+};
+
 export default function GraphView({ data, selectedContributor, selectedDomain, onContributorClick }) {
   const containerRef = useRef(null);
   const graphRef = useRef(null);
@@ -37,6 +46,131 @@ export default function GraphView({ data, selectedContributor, selectedDomain, o
     sprite.position.set(...position);
     sprite.scale.set(40, 20, 1);
     return sprite;
+  };
+
+  // ✨ 개선된 툴팁: 노드 타입별로 상세 정보 표시
+  const getNodeLabel = (node) => {
+    const icon = NODE_ICONS[node.type] || '⚪';
+    const typeLabel = {
+      issue: 'Issue',
+      pull_request: 'Pull Request',
+      commit: 'Commit',
+      contributor: 'Contributor',
+      file: 'File'
+    }[node.type] || `Unknown (${node.type})`;
+
+    // 시간 정보 포맷팅
+    const formatDate = (timestamp) => {
+      if (!timestamp) return 'N/A';
+      const date = new Date(timestamp);
+      return date.toLocaleDateString('ko-KR', { 
+        year: 'numeric', 
+        month: 'short', 
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+    };
+
+    let info = `${icon} ${typeLabel}\n`;
+    info += `${'━'.repeat(20)}\n`;
+
+    switch (node.type) {
+      case 'issue':
+        info += `📌 ${node.label}: ${node.title}\n`;
+        info += `👤 작성자: ${node.author}\n`;
+        info += `📅 생성: ${formatDate(node.timestamp)}\n`;
+        info += `🏷️ 상태: ${node.state || 'N/A'}`;
+        if (node.labels && node.labels.length > 0) {
+          info += `\n🔖 라벨: ${node.labels.slice(0, 3).join(', ')}`;
+        }
+        if (node.z && node.originalZ) {
+          const weekDate = new Date(node.z * 1000).toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+          info += `\n📆 주차: ${weekDate}주`;
+          info += `\n⏰ fz: ${node.fz?.toFixed(1)}`;
+        }
+        break;
+
+      case 'pull_request':
+        info += `🔀 ${node.label}: ${node.title}\n`;
+        info += `👤 작성자: ${node.author}\n`;
+        info += `📅 생성: ${formatDate(node.timestamp)}\n`;
+        info += `🏷️ 상태: ${node.state || 'N/A'}`;
+        if (node.merged) {
+          info += `\n✅ 병합: ${formatDate(node.merged_at)}`;
+        }
+        if (node.head_branch) {
+          info += `\n🌿 ${node.head_branch} → ${node.base_branch}`;
+        }
+        if (node.z && node.originalZ) {
+          const weekDate = new Date(node.z * 1000).toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+          info += `\n📆 주차: ${weekDate}주`;
+          info += `\n⏰ fz: ${node.fz?.toFixed(1)}`;
+        }
+        break;
+
+      case 'commit':
+        info += `💬 ${node.label}\n`;
+        info += `📝 ${node.title}\n`;
+        info += `👤 작성자: ${node.author}\n`;
+        info += `📅 커밋: ${formatDate(node.timestamp)}`;
+        if (node.additions !== undefined || node.deletions !== undefined) {
+          info += `\n📊 +${node.additions || 0} -${node.deletions || 0}`;
+        }
+        if (node.z && node.originalZ) {
+          const weekDate = new Date(node.z * 1000).toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+          info += `\n📆 주차: ${weekDate}주`;
+          info += `\n⏰ fz: ${node.fz?.toFixed(1)}`;
+        }
+        break;
+
+      case 'contributor':
+        info += `👤 ${node.label}\n`;
+        if (node.title && node.title !== node.label) {
+          info += `📛 ${node.title}\n`;
+        }
+        if (node.contributions) {
+          info += `📊 기여: ${node.contributions}개`;
+        }
+        info += `\n⏰ 고정 노드 (시간축 없음)`;
+        break;
+
+      case 'file':
+        info += `📄 ${node.label}\n`;
+        info += `📁 ${node.path}\n`;
+        if (node.timestamp) {
+          info += `📅 수정: ${formatDate(node.timestamp)}\n`;
+        }
+        if (node.extension) {
+          info += `🏷️ 타입: ${node.extension}\n`;
+        }
+        if (node.domain) {
+          info += `🎯 도메인: ${node.domain}`;
+        }
+        if (node.lines) {
+          info += `\n📏 ${node.lines} 줄`;
+        }
+        if (node.additions !== undefined || node.deletions !== undefined) {
+          info += `\n📊 +${node.additions || 0} -${node.deletions || 0}`;
+        }
+        if (node.z && node.originalZ) {
+          const weekDate = new Date(node.z * 1000).toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+          info += `\n📆 주차: ${weekDate}주`;
+          info += `\n⏰ fz: ${node.fz?.toFixed(1)}`;
+        } else if (node.z === 0) {
+          info += `\n⏰ Z: 0 (시간축 없음)`;
+        }
+        break;
+
+      default:
+        info += `⚠️ 알 수 없는 타입: ${node.type}\n`;
+        info += `ID: ${node.id}\n`;
+        info += `Label: ${node.label}\n`;
+        info += `Title: ${node.title || 'N/A'}`;
+        console.warn('⚠️ 알 수 없는 노드 타입:', node);
+    }
+
+    return info;
   };
 
   const getRelatedNodeIds = (contributorId, graphData) => {
@@ -68,12 +202,13 @@ export default function GraphView({ data, selectedContributor, selectedDomain, o
   useEffect(() => {
     const graph = ForceGraph3D()(containerRef.current)
       .backgroundColor('#f9fafaff')
-      .nodeLabel(node => `${node.label}: ${node.title || ''}\nby ${node.author}`)
+      .nodeLabel(node => getNodeLabel(node))
       .nodeRelSize(6)
       .linkDirectionalArrowLength(3)
       .linkDirectionalArrowRelPos(1)
       .linkDirectionalParticles(2)
       .onNodeClick(node => {
+        console.log('🖱️ 클릭한 노드:', node);
         if (node.type === 'contributor') onContributorClick(node.id);
       });
 
@@ -93,6 +228,13 @@ export default function GraphView({ data, selectedContributor, selectedDomain, o
     if (!graphRef.current || !data.nodes.length) return;
 
     const graph = graphRef.current;
+    
+    // ✨ 데이터 검증
+    const invalidNodes = data.nodes.filter(n => !n.type || !NODE_COLORS[n.type]);
+    if (invalidNodes.length > 0) {
+      console.warn('⚠️ 타입이 없거나 정의되지 않은 노드:', invalidNodes);
+    }
+    
     graph.graphData(data);
 
     graph.onNodeDrag(node => { node.fz = node.baseZ; })
@@ -177,11 +319,23 @@ export default function GraphView({ data, selectedContributor, selectedDomain, o
     else {
       graph
         .nodeColor(node => {
+          // ✨ 타입 검증
+          if (!node.type) {
+            console.error('❌ 타입이 없는 노드:', node);
+            return '#FF0000';  // 빨간색
+          }
+          
           // 파일 노드는 도메인 색상 사용
           if (node.type === 'file' && node.domain) {
             return DOMAIN_COLORS[node.domain] || NODE_COLORS.file;
           }
-          return NODE_COLORS[node.type] || '#888';
+          
+          if (!NODE_COLORS[node.type]) {
+            console.error(`❌ 정의되지 않은 타입: ${node.type}`, node);
+            return '#FF6B6B';  // 주황색
+          }
+          
+          return NODE_COLORS[node.type];
         })
         .linkColor(() => '#021550')
         .linkOpacity(0.2)
