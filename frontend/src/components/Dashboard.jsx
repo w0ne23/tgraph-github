@@ -6,7 +6,7 @@ const DOMAIN_COLORS = {
   database: '#45B7D1',
   visualization: '#FFA07A',
   authentication: '#98D8C8',
-  uncategorized: '#95A5A6'
+  uncategorized: '#98D8C8'
 };
 
 export default function DashboardModal({ insights, onClose }) {

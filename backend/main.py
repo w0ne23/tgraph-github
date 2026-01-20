@@ -13,6 +13,7 @@ import json
 from analyzers.domain_classifier import classify_multiple_files, extract_imports, classify_file
 from analyzers.insight_generator import generate_insights, merge_insights_with_graph
 
+from pydantic import BaseModel
 from pathlib import Path
 
 app = FastAPI(title="T-Graph GitHub API")
@@ -86,7 +87,7 @@ def load_json_file(filename: str = "data.json"):
                     node["domain"] = matching_file["domain"]
         
         # 인사이트 생성
-        insights = generate_insights(classified_files, nodes, edges)
+        insights = generate_insights(data)
         
         # 최종 응답
         return {
@@ -328,6 +329,73 @@ def demo_data():
         "edges": edges,
         "insights": insights
     }
+
+class QuestionRequest(BaseModel):
+    """Q&A 요청 모델"""
+    question: str
+    filename: str = "data.json"
+
+
+@app.post("/api/qa")
+async def ask_question(request: QuestionRequest):
+    """TGraphRAG 기반 Q&A 엔드포인트"""
+    from qa_engine import get_qa_engine
+    from config import GEMINI_API_KEY
+
+    # API 키 확인
+    if not GEMINI_API_KEY:
+        raise HTTPException(
+            status_code=500,
+            detail="GEMINI_API_KEY가 설정되지 않았습니다. .env 파일에 추가하세요."
+        )
+
+    # 그래프 데이터 로드
+    json_path = Path(__file__).parent / "github_data" / request.filename
+    if not json_path.exists():
+        raise HTTPException(
+            status_code=404,
+            detail=f"파일을 찾을 수 없습니다: github_data/{request.filename}"
+        )
+
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+        # 도메인 분류 적용
+        nodes = data.get("nodes", [])
+        edges = data.get("edges", [])
+        file_nodes = [node for node in nodes if node.get("type") == "file"]
+        classified_files = classify_multiple_files(file_nodes)
+
+        for node in nodes:
+            if node.get("type") == "file":
+                matching_file = next(
+                    (f for f in classified_files if f["id"] == node["id"]),
+                    None
+                )
+                if matching_file:
+                    node["domain"] = matching_file["domain"]
+
+        # 인사이트 생성
+        insights = generate_insights(data)
+
+        graph_data = {
+            "nodes": nodes,
+            "edges": edges,
+            "insights": insights
+        }
+
+        # Q&A 엔진으로 답변 생성
+        qa_engine = get_qa_engine()
+        result = qa_engine.ask(request.question, graph_data)
+
+        return result
+
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=400, detail="잘못된 JSON 형식입니다")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 
 @app.post("/api/analyze")
 async def analyze_repository(repo_url: str):

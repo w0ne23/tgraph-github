@@ -3,6 +3,7 @@ import GraphView from './components/GraphView';
 import Legend from './components/Legend';
 import ControlPanel from './components/ControlPanel';
 import DashboardModal from './components/Dashboard';
+import QAPanel from './components/QAPanel';
 
 export default function App() {
   const [status, setStatus] = useState('loading');
@@ -11,7 +12,8 @@ export default function App() {
   const [selectedContributor, setSelectedContributor] = useState(null);
   const [selectedDomain, setSelectedDomain] = useState(null);
   const [viewMode, setViewMode] = useState('all');
-  const [showDashboard, setShowDashboard] = useState(false);  // ✨ 대시보드 모달 상태
+  const [showDashboard, setShowDashboard] = useState(false);
+  const [showQA, setShowQA] = useState(false);
 
   // ✨ 주 단위로 시간 매핑하는 함수
   const mapToWeeklyTimestamp = (timestamp, projectStart) => {
@@ -33,11 +35,10 @@ export default function App() {
       .then(data => {
         console.log("📊 받은 데이터:", data);
         
-        // ✨ contributor를 제외한 모든 노드의 z 값 사용
+        // ✨ contributor를 제외하지 않고 모든 z>0 노드 사용
         const zValues = data.nodes
-          .filter(n => n.type !== 'contributor')  // contributor 제외
           .map(n => n.z)
-          .filter(z => z > 0);  // z=0도 제외 (예외 케이스)
+          .filter(z => z > 0);  // z=0만 제외 (기여하지 않은 contributor는 없을 것)
         
         if (zValues.length === 0) {
           console.error("❌ 시간 데이터가 없습니다!");
@@ -100,15 +101,7 @@ export default function App() {
         console.log("📏 정규화 범위:", { minZ, maxZ, range });
 
         const normalizedNodes = mappedNodes.map(node => {
-          // ✨ contributor만 z=0으로 고정, 나머지는 정규화
-          if (node.type === 'contributor') {
-            return {
-              ...node,
-              fz: 0,
-              baseZ: 0
-            };
-          }
-          
+          // ✨ z=0인 노드만 0으로 고정 (첫 기여 시간이 없는 경우만)
           if (node.z === 0) {
             console.warn('⚠️  시간 정보가 없는 노드:', node);
             return {
@@ -169,13 +162,14 @@ export default function App() {
       {/* UI 컴포넌트 */}
       <Legend status={status} />
       
-      <ControlPanel 
+      <ControlPanel
         viewMode={viewMode}
         setViewMode={setViewMode}
         contributors={contributors}
         selectedContributor={selectedContributor}
         onContributorSelect={setSelectedContributor}
-        onShowDashboard={() => setShowDashboard(true)}  // ✨ 대시보드 열기
+        onShowDashboard={() => setShowDashboard(true)}
+        onShowQA={() => setShowQA(true)}
       />
 
       {/* 그래프 시각화 엔진 */}
@@ -188,10 +182,15 @@ export default function App() {
 
       {/* 대시보드 모달 */}
       {showDashboard && (
-        <DashboardModal 
-          insights={insights} 
-          onClose={() => setShowDashboard(false)} 
+        <DashboardModal
+          insights={insights}
+          onClose={() => setShowDashboard(false)}
         />
+      )}
+
+      {/* Q&A 패널 */}
+      {showQA && (
+        <QAPanel onClose={() => setShowQA(false)} />
       )}
     </div>
   );

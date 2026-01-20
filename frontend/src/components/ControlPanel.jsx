@@ -1,7 +1,8 @@
-export default function ControlPanel({ 
-  viewMode, setViewMode, contributors, 
+export default function ControlPanel({
+  viewMode, setViewMode, contributors,
   selectedContributor, onContributorSelect,
-  onShowDashboard  // ✨ 새로 추가
+  onShowDashboard,
+  onShowQA
 }) {
   const handleViewModeChange = (mode) => {
     setViewMode(mode);
@@ -24,7 +25,7 @@ export default function ControlPanel({
         <ModeButton active={viewMode === 'contributor-focused'} onClick={() => handleViewModeChange('contributor-focused')} label="👥 기여자 중심" />
       </div>
 
-      {/* ✨ 프로젝트 분석 버튼 추가 */}
+      {/* 프로젝트 분석 버튼 */}
       <button
         onClick={onShowDashboard}
         style={{
@@ -38,7 +39,7 @@ export default function ControlPanel({
           color: 'white',
           cursor: 'pointer',
           transition: 'all 0.2s',
-          marginBottom: '16px',
+          marginBottom: '8px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -53,7 +54,39 @@ export default function ControlPanel({
           e.currentTarget.style.boxShadow = 'none';
         }}
       >
-        📊 프로젝트 분석 보기
+        Project Analysis
+      </button>
+
+      {/* AI Q&A 버튼 */}
+      <button
+        onClick={onShowQA}
+        style={{
+          width: '100%',
+          padding: '12px',
+          fontSize: '13px',
+          fontWeight: 'bold',
+          borderRadius: '8px',
+          border: '2px solid #2da44e',
+          background: 'linear-gradient(135deg, #2da44e 0%, #1a7f37 100%)',
+          color: 'white',
+          cursor: 'pointer',
+          transition: 'all 0.2s',
+          marginBottom: '16px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '8px'
+        }}
+        onMouseOver={(e) => {
+          e.currentTarget.style.transform = 'translateY(-2px)';
+          e.currentTarget.style.boxShadow = '0 4px 12px rgba(45, 164, 78, 0.4)';
+        }}
+        onMouseOut={(e) => {
+          e.currentTarget.style.transform = 'translateY(0)';
+          e.currentTarget.style.boxShadow = 'none';
+        }}
+      >
+        AI Q&A
       </button>
 
       {viewMode === 'contributor-focused' && (

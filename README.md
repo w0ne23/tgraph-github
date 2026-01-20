@@ -18,7 +18,18 @@ tgraph-github/
 
 ## 실행 방법
 
-### 1. 백엔드 설정
+### 1. github 데이터 크롤링
+
+```bash
+cd backend
+
+# 데이터 크롤링
+python python github_graphql_crawler_tgraph.py --repo {owner}/{repo}
+
+#backend/github_data/data.json 생성 확인
+```
+
+### 2. 백엔드 설정
 
 ```bash
 cd backend
@@ -36,7 +47,7 @@ cp .env .env
 python main.py
 ```
 
-### 2. GitHub 토큰 발급
+### 3. GitHub 토큰 발급
 
 1. GitHub → Settings → Developer settings
 2. Personal access tokens → Fine-grained tokens
@@ -44,7 +55,7 @@ python main.py
 4. Repository access: Public repositories (read-only)
 5. 토큰 복사 → `.env` 파일에 붙여넣기
 
-### 3. 프론트엔드 실행
+### 4. 프론트엔드 실행
 
 ```bash
 cd frontend

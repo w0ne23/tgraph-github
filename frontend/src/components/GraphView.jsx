@@ -16,7 +16,7 @@ const DOMAIN_COLORS = {
   database: '#45B7D1',
   visualization: '#FFA07A',
   authentication: '#98D8C8',
-  uncategorized: '#95A5A6'
+  uncategorized: '#98D8C8'
 };
 
 // ✨ 노드 타입별 이모지
@@ -130,9 +130,16 @@ export default function GraphView({ data, selectedContributor, selectedDomain, o
           info += `📛 ${node.title}\n`;
         }
         if (node.contributions) {
-          info += `📊 기여: ${node.contributions}개`;
+          info += `📊 기여: ${node.contributions}개\n`;
         }
-        info += `\n⏰ 고정 노드 (시간축 없음)`;
+        if (node.z && node.z > 0 && node.timestamp) {
+          info += `📅 첫 기여: ${formatDate(node.timestamp)}\n`;
+          const weekDate = new Date(node.z * 1000).toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+          info += `📆 주차: ${weekDate}주\n`;
+          info += `⏰ fz: ${node.fz?.toFixed(1)}`;
+        } else {
+          info += `⏰ 기여 기록 없음`;
+        }
         break;
 
       case 'file':
@@ -326,8 +333,12 @@ export default function GraphView({ data, selectedContributor, selectedDomain, o
           }
           
           // 파일 노드는 도메인 색상 사용
-          if (node.type === 'file' && node.domain) {
-            return DOMAIN_COLORS[node.domain] || NODE_COLORS.file;
+          if (node.type === 'file') {
+            if (node.domain && DOMAIN_COLORS[node.domain]) {
+              return DOMAIN_COLORS[node.domain];
+            }
+            // domain이 없으면 기본 파일 색상
+            return NODE_COLORS.file;
           }
           
           if (!NODE_COLORS[node.type]) {

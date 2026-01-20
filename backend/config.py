@@ -8,6 +8,10 @@ load_dotenv(env_path)
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_API_URL = "https://api.github.com/graphql"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 if not GITHUB_TOKEN:
-    print("⚠️  .env 파일에 GITHUB_TOKEN을 설정하세요")
+    print("Warning: GITHUB_TOKEN not set in .env file")
+
+if not GEMINI_API_KEY:
+    print("Warning: GEMINI_API_KEY not set in .env file (required for Q&A feature)")
